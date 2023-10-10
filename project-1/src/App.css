@@ -1,38 +1,134 @@
-.App {
+:root {
+  --heading: "Red Hat Display", sans-serif;
+  --normal-text: "Red Hat Text", sans-serif;
+
+  --text-color: #001804;
+}
+
+/* FEATURED CLIENT STYLES */
+
+.featured-clients {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #b2e8b2;
+  margin-bottom: 1rem;
+}
+
+.featured-clients h3 {
   text-align: center;
+  font-family: var(--heading);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clients-logo {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container .slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+  margin-right: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.container .slider .logos {
+  width: 100%;
+  display: inline-block;
+  margin: 0px 0;
 }
 
-@keyframes App-logo-spin {
+.container .slider .logos .fab {
+  width: calc(100% / 5);
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate3d(-100%, 0, 0);
   }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #b2e8b2;
+  font-family: var(--normal-text);
+}
+
+.footer-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.footer h6 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.footer h3,
+.footer p {
+  color: var(--text-color);
+}
+
+.footer h3 {
+  font-family: var(--heading);
+}
+
+.copyright {
+  margin: auto;
+}
+
+.branches-list {
+  list-style: none;
+  margin-left: -2rem;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-bottom: 0.25rem;
+}
+
+.footer-link {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  color: var(--text-color);
+  margin-right: 1rem;
+}
+
+.footer-nav-links {
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-nav-links:hover {
+  text-decoration: underline;
 }
