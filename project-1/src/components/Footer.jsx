@@ -12,8 +12,8 @@ export function Footer() {
     <div className="footer">
       <Container>
         <Row>
-          <Col>
-            <Logo />
+          <Col className="footer-logo-container">
+            <Logo className={'footer-logo'} />
           </Col>
           <Col>
             <h3>Contact Us</h3>
