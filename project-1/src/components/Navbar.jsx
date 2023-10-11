@@ -1,35 +1,60 @@
-import React, { useState } from 'react'
-import {Link, NavLink} from 'react-router-dom'
-import './Navbar.css'
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+import logo from "../assets/logo.png";
 
 export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const [menuOpen, setMenuOpen] = useState(false)
+  return (
+    <nav className="navbar navbar-expand-lg  py-3 d-flex justify-content-space-between shadow sticky-top">
+      <div className="container">
+        <NavLink to="/" className="navbar-brand fw-medium">
+          <img id="navbar-logo" src={logo} alt="" />
+          PADES Printing
+        </NavLink>
 
-    return (
-        <nav>
-            <Link to='/' className='title'>Website</Link>
-            <div className="menu" onClick={() => {
-                setMenuOpen(!menuOpen);
-            }}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul className={menuOpen ? "open" : ""}>
-                <li>
-                    <NavLink to='/about'>About</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/contact'>Contact</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/products'>Products</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/services'>Services</NavLink>
-                </li>
-            </ul>
-        </nav>
-    )
-}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span>
+            <i class="bi bi-list"></i>
+          </span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navmenu">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/about" className="nav-link">
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/contact" className="nav-link">
+                Contact
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/products" className="nav-link">
+                Products
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/services" className="nav-link">
+                Services
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};

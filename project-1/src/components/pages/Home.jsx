@@ -1,11 +1,13 @@
 import React from "react";
-import { FeaturedClients } from "../FeaturedClients";
+import { OurClients } from "../OurClients";
+import { OurProjects } from "../OurProjects";
 
 export const Home = () => {
     return (
         <>
             <div>Home</div>
-            <FeaturedClients />
+            <OurClients />
+            <OurProjects/>
         </>
     )
 }
