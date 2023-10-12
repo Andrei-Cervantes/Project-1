@@ -274,7 +274,7 @@
 
 
 .about-heading{
-  background-image: url('./assets/bannerbg.jpg');
+  background-image:linear-gradient(to bottom, rgba(238, 217, 217, 0.52), rgba(0, 0, 0, 0.73)), url('./assets/bannerbg.png');
   width: 100%;
   height: 70%;
   background-size: cover;
@@ -283,6 +283,7 @@
 }
 
 .about-title{
+  color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: var(--normal-text);
@@ -296,6 +297,7 @@
 }
 
 .about-subtitle{
+  color: white;
   letter-spacing: 7px;
   font-family: var(--normal-text);
   padding-top: 2rem;
@@ -312,6 +314,7 @@
 }
 
 .about-des{
+  color: white;
   border-radius: 10px;
   border: 6px solid white;
   position: relative;
