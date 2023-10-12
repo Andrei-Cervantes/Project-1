@@ -178,6 +178,13 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: var(--normal-text);
+  position: relative;
+  animation: mymovetitle 2s;
+}
+
+@keyframes mymovetitle {
+  from {top: 50px; opacity: 0;}
+  to {top: 0px; opacity:1;}
 }
 
 .about-subtitle{
@@ -185,8 +192,16 @@
   font-family: var(--normal-text);
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-  padding-left: 4rem;
+  padding-left: 5rem;
   padding-right: 1rem;
+  position: relative;
+  animation: mymovesubtitle 2s;
+  
+}
+
+@keyframes mymovesubtitle {
+  from {left: 100px; opacity: 0;}
+  to {left: 0px; opacity: 1;}
 }
 
 .about-des{
@@ -194,6 +209,12 @@
   border-style: solid;
   border-radius: 10px;
   border-color: #c1fcd3;
+  position: relative;
+  animation: fade-in 2s;
+}
+@keyframes fade-in{
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .about-description{
@@ -201,6 +222,13 @@
   padding-bottom: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  position: relative;
+  animation: mymovedescription 2s;
+}
+
+@keyframes mymovedescription {
+  from {right: 100px; opacity: 0;}
+  to {right: 0px; opacity: 1;}
 }
 
 
