@@ -6,6 +6,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -77,13 +78,19 @@ export function Footer() {
           <Col>
             <Nav className="justify-content-end" activeKey="/home">
               <Nav.Item>
-                <a href="" className="footer-nav-links">Home</a>
+                <NavLink to="/" className="footer-nav-links">
+                Home
+              </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links">About</a>
+                <NavLink to="/about" className="footer-nav-links">
+                About
+              </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links">Contact</a>
+                <NavLink to="/contact" className="footer-nav-links">
+                Contact
+              </NavLink>
               </Nav.Item>
               <Nav.Item>
                 <a href="" className="footer-nav-links">Terms and Conditions</a>
