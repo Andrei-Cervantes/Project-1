@@ -1,12 +1,14 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import doc1 from './assets/doc1.png'
-import doc2 from './assets/doc2.png'
-import doc3 from './assets/doc3.png'
-import doc4 from './assets/doc4.png'
-import doc5 from './assets/doc5.png'
-import doc6 from './assets/doc7.png'
-import doc7 from './assets/doc7.png'
+import missionLogo from './assets/AboutImages/mission.png'
+import visionLogo from './assets/AboutImages/vision.png'
+import doc1 from './assets/AboutImages/doc1.png'
+import doc2 from './assets/AboutImages/doc2.png'
+import doc3 from './assets/AboutImages/doc3.png'
+import doc4 from './assets/AboutImages/doc4.png'
+import doc5 from './assets/AboutImages/doc5.png'
+import doc6 from './assets/AboutImages/doc6.png'
+import doc7 from './assets/AboutImages/doc7.png'
 
 
 export const About = () => {
@@ -24,8 +26,6 @@ export const About = () => {
     
     let visionmessage1 = "Our vision is to be most premier service provider in the field of Printing Services. With the use of latest technologies, we aim to provide world-class services to our clients and forming strong relationships with our clients by maintaning cost, quality and deadlines."
     let visionmessage2 = "We, at Padro Design & Printing Services understands the needs and the importance of good and high quality printing. We continuously innovating our process and out sourcing the demands of our valuable consumers. Investing knowledge in handling our latest machineries to produce high quality print out and products to meet our clients expectations and needs. "
-
-    
 
     return (
         <>
@@ -65,10 +65,14 @@ export const About = () => {
                                 <li className="mission-message">{missionmessage6}</li>
                             </ul>
                         </div>
-                        <div className=" col-md-6"></div>
+                        <div className="container col-md-6">
+                            <img className="about-logo" src={missionLogo} alt=""></img>
+                        </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6"></div>
+                        <div className="col-md-6">
+                            <img className="about-logo" src={visionLogo} alt=""></img>
+                        </div>
                         <div className=" our-vision col-md-6">
                             <h2 className="vision-title text-center">OUR VISION</h2>
                             <p className="vision-message">{visionmessage1}</p>
@@ -122,7 +126,6 @@ export const About = () => {
                     </Carousel>
                 </div>
             </section>
-            </>
+        </>
     )
 }
-
