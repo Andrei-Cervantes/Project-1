@@ -379,10 +379,10 @@
 
 .vision-message{
   position: relative;
-  animation: lefttoright 2s;
+  animation: rightorleft 2s;
 }
 
-@keyframes lefttoright {
+@keyframes rightorleft {
   from {left: 100px; opacity: 0;}
   to {left: 0px; opacity: 1;}
 }
@@ -394,4 +394,14 @@
 .documents-title{
   padding-top: 3rem;
   padding-bottom: 2rem;
+}
+
+.docu-property{
+  width: 50%;
+  height: 60%;
+}
+
+.docu-details{
+  font-family: var(--normal-text);
+  color: #001804;
 }
