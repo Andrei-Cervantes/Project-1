@@ -171,7 +171,7 @@
 .about-heading{
   background-color: #ffffff;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 .about-title{
@@ -196,7 +196,6 @@
   padding-right: 1rem;
   position: relative;
   animation: mymovesubtitle 2s;
-  
 }
 
 @keyframes mymovesubtitle {
@@ -231,4 +230,63 @@
   to {right: 0px; opacity: 1;}
 }
 
+.mission-vision{
+  background-color: #c1fcd3; 
+}
 
+.mission-title{
+  position: relative;
+  animation: mymovetitle 2s;
+  padding-bottom: 1rem;
+
+}
+
+.vision-title{
+  position: relative;
+  animation: mymovetitle 2s;
+}
+
+.our-mission{
+  font-family: var(--normal-text);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.our-vision{
+  font-family: var(--normal-text);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.about h2, p, li{
+  font-family: var(--normal-text);
+}
+
+.mission-message{
+  position: relative;
+  animation: lefttoright 2s;
+}
+
+@keyframes lefttoright {
+  from {right: 100px; opacity: 0;}
+  to {right: 0px; opacity: 1;}
+}
+
+.vision-message{
+  position: relative;
+  animation: lefttoright 2s;
+}
+
+@keyframes lefttoright {
+  from {left: 100px; opacity: 0;}
+  to {left: 0px; opacity: 1;}
+}
+
+.documents-img{
+  background-color: #ffffff;
+}
+
+.documents-title{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
