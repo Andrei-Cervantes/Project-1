@@ -2,17 +2,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Card from "react-bootstrap/Card";
-import p10 from "../assets/ProjectImages/p10.png";
-import p13 from "../assets/ProjectImages/p13.png";
-import p12 from "../assets/ProjectImages/p12.png";
-import p14 from "../assets/ProjectImages/p14.png";
+import p10 from "../assets/ProductImages/p10.png";
+import p13 from "../assets/ProductImages/p13.png";
+import p12 from "../assets/ProductImages/p12.png";
+import p14 from "../assets/ProductImages/p14.png";
 
-export function OurProjects() {
+export function OurProducts() {
   return (
     <div className="home-projects-section">
       <Container>
         <Row>
-          <h3 className="text-center">Our Projects</h3>
+          <h3 className="text-center">Our Products</h3>
         </Row>
         <Row className="project-card-row">
           <Col>

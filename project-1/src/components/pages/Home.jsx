@@ -1,12 +1,14 @@
 import React from "react";
 import { OurClients } from "../OurClients";
-import { OurProjects } from "../OurProjects";
+import { OurProducts } from "../OurProducts";
+import { HomeHero } from "../HomeHero";
 
 export const Home = () => {
     return (
         <>
+            <HomeHero />
             <OurClients />
-            <OurProjects/>
+            <OurProducts/>
         </>
     )
 }

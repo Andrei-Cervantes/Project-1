@@ -10,7 +10,7 @@ import { Services } from "./components/pages/Services"
 
 import { OurClients } from "./components/OurClients";
 import { Footer } from "./components/Footer";
-import { OurProjects } from "./components/OurProjects";
+import { OurProjects } from "./components/OurProducts";
 
 function App() {
   return (

@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { Logo } from "./Logo";
+import logo from "../assets/logo.png";
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
       <Container>
         <Row>
           <Col className="footer-logo-container">
-            <Logo className={'footer-logo'} />
+            <img id="footer-logo" src={logo} alt="" />  
           </Col>
           <Col>
             <h3>Contact Us</h3>
