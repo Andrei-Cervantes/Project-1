@@ -5,7 +5,6 @@ import { OurProjects } from "../OurProjects";
 export const Home = () => {
     return (
         <>
-            <div>Home</div>
             <OurClients />
             <OurProjects/>
         </>

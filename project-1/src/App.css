@@ -164,3 +164,43 @@
   text-decoration: underline;
   color: var(--text-color);
 }
+
+/* About Styles */
+
+
+.about-heading{
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.about-title{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--normal-text);
+}
+
+.about-subtitle{
+  letter-spacing: 7px;
+  font-family: var(--normal-text);
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+
+.about-des{
+  background-color: #c1fcd3;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #c1fcd3;
+}
+
+.about-description{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+
