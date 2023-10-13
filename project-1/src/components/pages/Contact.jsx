@@ -15,6 +15,7 @@ export const Contact = () => {
   return (
     <>
       <div className="hero-section">
+        <div className="block"></div>
         <h1 className="text-center">GET IN TOUCH WITH US!</h1>
       </div>
       <Container fluid>

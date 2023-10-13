@@ -1,10 +1,15 @@
 .hero-section {
-    height: 280px;
-    background-color: #B2E8B2;
+    height: 360px;
+    background: url('./assets/ContactsBG.png') no-repeat center -450px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+}
+
+.hero-section h1 {
+    margin-top: 3rem;
+    color: white;
 }
 
 .contact-container {
