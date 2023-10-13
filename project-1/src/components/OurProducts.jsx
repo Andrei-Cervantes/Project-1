@@ -12,7 +12,23 @@ export function OurProducts() {
     <div className="home-projects-section">
       <Container>
         <Row>
-          <h3 className="text-center">Our Products</h3>
+        <Col>
+            <Card className="services-card our-services">
+              <h3>Our Products</h3>
+            </Card>
+          </Col>
+          <Col>
+            <Card className="services-card more-services">
+              <div className="view-more">
+                <a className="view-more-text" href="/services">
+                  View More{" "}
+                  <span className="arrow-animation">
+                    <i className="bi bi-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </Card>
+          </Col>
         </Row>
         <Row className="project-card-row">
           <Col>

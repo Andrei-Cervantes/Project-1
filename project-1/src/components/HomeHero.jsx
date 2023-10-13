@@ -24,7 +24,12 @@ export function HomeHero() {
           <Col>
             <Card className="services-card more-services">
               <div className="view-more">
-                <a className="view-more-text" href="/services">View More <span className="arrow-animation"><i className="bi bi-arrow-right"></i></span></a>
+                <a className="view-more-text" href="/services">
+                  View More{" "}
+                  <span className="arrow-animation">
+                    <i className="bi bi-arrow-right"></i>
+                  </span>
+                </a>
               </div>
             </Card>
           </Col>
