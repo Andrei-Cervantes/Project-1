@@ -328,7 +328,7 @@
   color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: var(--header);
+  font-family: var(--heading);
   position: relative;
   text-shadow: 2px 2px #121212;
   letter-spacing: 2px;
@@ -469,6 +469,38 @@
   padding-bottom: 1rem;
 }
 
+.services-banner {
+  background: url(./assets/bannerbg2.png) no-repeat center center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.services-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+.services-banner h2 {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  font-family: var(--heading);
+  position: relative;
+  text-shadow: 2px 2px #121212;
+  letter-spacing: 2px;
+}
+.services-subtitle {
+  font-family: var(--normal-text);
+  color: white;
+  position: relative;
+  text-shadow: 1px 1px #121212;
+  text-align: left;
+  padding: 1rem 80px;
+}
+
 .services-heading {
   margin-bottom: 1rem;
 }
@@ -483,18 +515,6 @@
 }
 .services-title h2 {
   margin: 0;
-}
-
-.services-subtitle {
-  position: relative;
-  align-self: center;
-  text-align: left;
-  margin: 0;
-  font-family: var(--normal-text);
-}
-.services-subtitle-container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .services-slider {
