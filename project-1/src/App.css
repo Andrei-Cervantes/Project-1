@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: flex-end;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 112px;
   text-shadow: 2px 2px #121212;
 }
@@ -64,7 +64,7 @@
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .services-card:hover {
@@ -91,7 +91,7 @@
 
 .view-more {
   margin-left: auto;
-  padding-top:0.75rem;
+  padding-top: 0.75rem;
 }
 .view-more-text {
   color: var(--text-color);
@@ -151,7 +151,6 @@
   font-family: var(--normal-text);
   font-weight: 500;
 }
-
 
 /* FEATURED CLIENT STYLES */
 
@@ -234,8 +233,13 @@
 /* FOOTER STYLES */
 
 .footer {
-  background: rgb(12,205,163);
-  background: linear-gradient(0deg, rgba(12,205,163,1) 0%, rgba(48,214,173,1) 14%, rgba(193,252,211,1) 100%);
+  background: rgb(12, 205, 163);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 205, 163, 1) 0%,
+    rgba(48, 214, 173, 1) 14%,
+    rgba(193, 252, 211, 1) 100%
+  );
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-family: var(--normal-text);
@@ -266,8 +270,8 @@
 
 .copyright {
   margin: auto;
-  padding-left: 0;color: 
-  var(--text-color);
+  padding-left: 0;
+  color: var(--text-color);
 }
 
 .branches-list {
@@ -318,13 +322,13 @@
   padding-bottom: 1rem;
 }
 
-.about-heading{
+.about-heading {
   background: url(./assets/bannerbg2.png) no-repeat center center;
   position: relative;
   height: 50vh;
 }
 
-.about-title{
+.about-title {
   color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -335,14 +339,21 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   animation: mymovetitle 2s;
+  border: 0.5px solid rgb(245, 245, 245, 0.5);
 }
 
 @keyframes mymovetitle {
-  from {top: 50px; opacity: 0;}
-  to {top: 0px; opacity:1;}
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
 }
 
-.about-subtitle{
+.about-subtitle {
   color: white;
   letter-spacing: 7px;
   font-family: var(--heading);
@@ -354,110 +365,140 @@
 }
 
 @keyframes mymovesubtitle {
-  from {left: 100px; opacity: 0;}
-  to {left: 0px; opacity: 1;}
+  from {
+    left: 100px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
 
-.about-des{
+.about-des {
   color: white;
   position: relative;
   animation: fade-in 2s;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   text-shadow: 1px 1px #121212;
+  border: 0.5px solid rgb(245, 245, 245, 0.5);
 }
 
-@keyframes fade-in{
-  from {opacity: 0;}
-  to {opacity: 1;}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.about-description{
+.about-description {
   position: relative;
   animation: mymovedescription 2s;
   padding: 0.5rem 5rem;
 }
 
 @keyframes mymovedescription {
-  from {right: 100px; opacity: 0;}
-  to {right: 0px; opacity: 1;}
+  from {
+    right: 100px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
 }
 
 #about > div > div > div > div > div > p:nth-child(4) {
   margin-bottom: 0;
 }
 
-.mission-vision{
-  background-color: #c1fcd3; 
+.mission-vision {
+  background-color: #c1fcd3;
 }
 
-.mission-title{
+.mission-title {
   position: relative;
   animation: mymovetitle 2s;
   padding-bottom: 1rem;
-
 }
 
-.about-logo{
+.about-logo {
   transform: scale(50%);
 }
 
-.vision-title{
+.vision-title {
   position: relative;
   animation: mymovetitle 2s;
 }
 
-.our-mission{
+.our-mission {
   font-family: var(--normal-text);
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
-.our-vision{
+.our-vision {
   font-family: var(--normal-text);
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
-.about h2, p, li{
+.about h2,
+p,
+li {
   font-family: var(--normal-text);
 }
 
-.mission-message{
+.mission-message {
   position: relative;
   animation: lefttoright 2s;
 }
 
 @keyframes lefttoright {
-  from {right: 100px; opacity: 0;}
-  to {right: 0px; opacity: 1;}
+  from {
+    right: 100px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
 }
 
-.vision-message{
+.vision-message {
   position: relative;
   animation: rightorleft 2s;
 }
 
 @keyframes rightorleft {
-  from {left: 100px; opacity: 0;}
-  to {left: 0px; opacity: 1;}
+  from {
+    left: 100px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
 
-.documents-img{
+.documents-img {
   background-color: #ffffff;
 }
 
-.documents-title{
+.documents-title {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
-.docu-property{
+.docu-property {
   width: 50%;
   height: 60%;
 }
 
-.docu-details{
+.docu-details {
   font-family: var(--normal-text);
   color: #001804;
 }
@@ -482,6 +523,7 @@
 .services-content {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  border: 0.5px solid rgb(245, 245, 245, 0.5);
 }
 .services-banner h2 {
   color: white;
@@ -545,5 +587,83 @@
   padding: 0.5rem;
   border-radius: 8px 0 0 8px;
   font-family: var(--heading);
+  width: auto;
 }
 
+/* PRODUCTS PAGE STYLING */
+
+.products-banner {
+  background: url(./assets/bannerbg2.png) no-repeat center center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.products-banner h2 {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  font-family: var(--heading);
+  position: relative;
+  text-shadow: 2px 2px #121212;
+  letter-spacing: 2px;
+}
+
+/*  MOBILE RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+
+  /* HOME PAGE STYLING */
+
+  /* ABOUT PAGE STYLING */
+
+  /* CONTACT PAGE STYLING */
+
+  /* PRODUCTS PAGE STYLING */
+
+  /* SERVICES PAGE STYLING */
+  .services-banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .services-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0;
+    height: auto;
+    width: 92%;
+    padding: 1rem;
+    padding-top: 1.5rem;
+  }
+  .services-banner h2 {
+    padding: 0;
+  }
+  .services-subtitle {
+    padding: 0;
+    margin: 0;
+    width: inherit;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+  .services-subtitle p {
+    margin: 0;
+  }
+  .services-page-card-container {
+    padding: 0.5rem;
+  }
+  .services-page-card-title {
+    font-size: 16px;
+    text-align: right;
+    width: auto;
+  }
+  #root > div > div.services-page.container > div > div.slick-list > div > div:nth-child(6) > div > div > div > div > div.services-page-card-title.card-title.h5 {
+    margin-left: 3.5rem;
+  }
+  .services-slider {
+    margin: 0 0 2rem 0;
+  }
+}
