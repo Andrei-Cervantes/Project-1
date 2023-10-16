@@ -419,6 +419,17 @@
   background-color: #c1fcd3;
 }
 
+.mv-row {
+  height: 400px
+}
+
+.our-mission {
+  height: 100%;
+}
+.our-mission-img {
+  height: 1000%;
+}
+
 .mission-title {
   position: relative;
   animation: mymovetitle 2s;
@@ -616,15 +627,15 @@ li {
 
 @media only screen and (max-width: 600px) {
 
-  /* HOME PAGE STYLING */
+  /* HOME PAGE STYLING - MOBILE */
 
-  /* ABOUT PAGE STYLING */
+  /* ABOUT PAGE STYLING - MOBILE */
 
-  /* CONTACT PAGE STYLING */
+  /* CONTACT PAGE STYLING - MOBILE*/
 
-  /* PRODUCTS PAGE STYLING */
+  /* PRODUCTS PAGE STYLING - MOBILE*/
 
-  /* SERVICES PAGE STYLING */
+  /* SERVICES PAGE STYLING - MOBILE */
   .services-banner {
     width: 100%;
     display: flex;
@@ -665,5 +676,44 @@ li {
   }
   .services-slider {
     margin: 0 0 2rem 0;
+  }
+  .services-page {
+    overflow-x: hidden;
+  }
+
+  /* FOOTER STYLES - MOBILE */
+  .footer {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .footer img {
+    margin-left: 1rem;
+  }
+  #footer-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .footer-address {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 1rem 2rem 0 1rem;
+  }
+  .footer-address h6, .footer-address p{
+    margin-bottom: 0.5rem;
+  }
+  .footer-address li {
+    margin-bottom: 0.1rem;
+  }
+  .footer hr {
+    margin: 0.5rem -1rem;
+  }
+  .footer-copyright div {
+    display: block;
+  }
+  .copyright {
+    padding-left: 1rem;
+    font-size: 15px;
+  }
+  .footer-nav-links-container {
+    display: inline;
   }
 }

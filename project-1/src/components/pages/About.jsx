@@ -60,7 +60,7 @@ export const About = () => {
       </section>
       <section className="mission-vision">
         <div className="container">
-          <div className="row">
+          <div className="row mv-row">
             <div className="our-mission col-md-6">
               <h2 className="mission-title text-center">OUR MISSION</h2>
               <ul>
@@ -72,11 +72,11 @@ export const About = () => {
                 <li className="mission-message">{missionmessage6}</li>
               </ul>
             </div>
-            <div className="container col-md-6">
+            <div className="container col-md-6 our-mission-img">
               <img className="about-logo" src={missionLogo} alt=""></img>
             </div>
           </div>
-          <div className="row">
+          <div className="row mv-row">
             <div className="col-md-6">
               <img className="about-logo" src={visionLogo} alt=""></img>
             </div>

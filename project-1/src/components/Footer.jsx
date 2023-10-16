@@ -37,7 +37,7 @@ export function Footer() {
               </a>
             </Row>
           </Col>
-          <Col xs={6}>
+          <Col xs={6} className="footer-address">
             <h6>Office Address</h6>
             <p>
               Lot 19-B, Block 215, Dollar St. Phase 8, North Fairview, Quezon
@@ -69,14 +69,14 @@ export function Footer() {
 
       <hr />
 
-      <Container>
+      <Container className="footer-copyright">
         <Row>
           <Col className="copyright">
             Copyright &copy; 2023 Padro Design & Printing Services. All Rights
             Reserved
           </Col>
           <Col>
-            <Nav className="justify-content-end" activeKey="/home">
+            <Nav className="justify-content-end footer-nav-links-container" activeKey="/home">
               <Nav.Item>
                 <NavLink to="/" className="footer-nav-links">
                 Home
