@@ -45,6 +45,6 @@
     background-image: linear-gradient(#FFFF00 0%, #121212 50%);
 }
 
-.contact-info {
+.footer-link, .footer-icon {
     color: black;
 }
