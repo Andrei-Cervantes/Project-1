@@ -344,18 +344,6 @@
   backdrop-filter: blur(10px);
   border: 0.5px solid rgb(245, 245, 245, 0.5);
   font-size: 40px;
-  animation: mymovetitle 2s;
-}
-
-@keyframes mymovetitle {
-  from {
-    top: 50px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
 }
 
 .about-subtitle {
@@ -364,18 +352,6 @@
   font-family: var(--heading);
   padding-top: 1rem;
   position: relative;
-  animation: mymovesubtitle 2s;
-}
-
-@keyframes mymovesubtitle {
-  from {
-    left: 100px;
-    opacity: 0;
-  }
-  to {
-    left: 0px;
-    opacity: 1;
-  }
 }
 
 .first-section {
@@ -386,35 +362,13 @@
 .about-des {
   color: black;
   position: relative;
-  animation: fade-in 2s;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 0.5px solid rgb(245, 245, 245, 0.5);
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .about-description {
   position: relative;
-  animation: mymovedescription 2s;
-}
-
-@keyframes mymovedescription {
-  from {
-    right: 100px;
-    opacity: 0;
-  }
-  to {
-    right: 0px;
-    opacity: 1;
-  }
 }
 
 #about > div > div > div > div > div > p:nth-child(4) {
@@ -471,36 +425,12 @@ li {
 
 .mission-message {
   position: relative;
-  animation: lefttoright 2s;
 }
 
-@keyframes lefttoright {
-  from {
-    right: 100px;
-    opacity: 0;
-  }
-  to {
-    right: 0px;
-    opacity: 1;
-  }
-}
 
 .vision-message {
   position: relative;
-  animation: rightorleft 2s;
 }
-
-@keyframes rightorleft {
-  from {
-    left: 100px;
-    opacity: 0;
-  }
-  to {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
 .documents-img {
   background-color: #ffffff;
 }
@@ -613,6 +543,7 @@ li {
   height: 30vh;
   text-align: center;
 }
+
 .products-banner h2 {
   color: white;
   font-family: var(--heading);

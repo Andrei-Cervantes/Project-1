@@ -50,8 +50,8 @@ export const About = () => {
       <section className="first-section">
         <div className="container">
           <div className="about-des text-center">
-            <h3 className="about-subtitle text-center">COMPANY PROFILE</h3>
-            <div className="about-description text-start">
+            <h3 data-aos="fade-up" className="about-subtitle text-center">COMPANY PROFILE</h3>
+            <div data-aos="fade-up" className="about-description text-start">
               <p>{message1}</p>
               <p>{message2}</p>
               <p>{message3}</p>
@@ -81,8 +81,10 @@ export const About = () => {
             </div>
           </div>
           <div className="row mv-row">
-            <div className="col-md-6 our-mission-img text-center">
-              <img className="about-logo" src={visionLogo} alt=""></img>
+            <div className="col-md-6 our-mission-img">
+              <div data-aos="fade-up">
+                <img className="about-logo" src={visionLogo} alt=""></img>
+              </div>
             </div>
             <div className="our-vision col-md-6">
               <h2 className="vision-title text-center">OUR VISION</h2>

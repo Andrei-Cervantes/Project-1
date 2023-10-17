@@ -8,8 +8,11 @@ import { Contact } from "./components/pages/Contact"
 import { Products } from "./components/pages/Products"
 import { Services } from "./components/pages/Services"
 import { Footer } from "./components/Footer";
+import AOS from "aos";
+AOS.init();
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
