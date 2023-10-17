@@ -99,12 +99,12 @@ export const About = () => {
         </div>
       </section>
       <section className="documents-img">
-        <div className="container">
+        <div data-aos="fade-right" data-aos-duration="2000" className="container">
           <h2 className="documents-title text-center">LEGAL DOCUMENTATION</h2>
         </div>
 
-        <div className="container">
-          <Carousel>
+        <div data-aos="fade-left" data-aos-duration="2000" className="my-carousel container">
+          <Carousel fade data-bs-theme="dark">
             <Carousel.Item>
               <div className="text-center">
                 <img className="docu-property" alt="" src={doc1}></img>

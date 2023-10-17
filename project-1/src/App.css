@@ -357,14 +357,13 @@
 .first-section {
   padding-top: 5rem ;
   padding-bottom: 5rem;
+  background-color: #FFFF00;
 }
 
 .about-des {
   color: black;
   position: relative;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 0.5px solid rgb(245, 245, 245, 0.5);
 }
 
 .about-description {
@@ -377,7 +376,7 @@
 
 .mission-vision {
   padding-top: 5rem;
-  background-color: #c1fcd3;
+  background-color:#FFFF00;
 }
 
 .mv-row {
@@ -433,7 +432,7 @@ li {
   position: relative;
 }
 .documents-img {
-  background-color: #ffffff;
+  background-image: linear-gradient(#FFFF00 0%, #121212 50%);
 }
 
 .documents-title {
@@ -450,6 +449,7 @@ li {
   font-family: var(--normal-text);
   color: #001804;
 }
+
 
 /* SERVICES PAGE STYLES */
 
