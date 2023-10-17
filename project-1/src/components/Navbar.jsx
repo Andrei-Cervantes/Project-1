@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg  py-3 d-flex justify-content-space-between shadow sticky-top">
       <div className="container">
-        <NavLink to="/" className="navbar-brand fw-medium">
+        <NavLink to="/" className="navbar-brand fw-medium nav-logo" id="nav-title">
           <img id="navbar-logo" src={logo} alt="" />
           PADES Printing
         </NavLink>

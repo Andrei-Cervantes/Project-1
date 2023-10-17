@@ -47,27 +47,27 @@ function SamplePrevArrow(props) {
 }
 
 export const Services = () => {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: <SampleNextArrow />,
-      nextArrow: <SamplePrevArrow />,
-      swipeToSlide: true,
-      responsive: [
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            prevArrow: false,
-            nextArrow: false,
-          }
-        }
-      ],
-  }
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <SampleNextArrow />,
+    nextArrow: <SamplePrevArrow />,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -76,18 +76,17 @@ export const Services = () => {
           <Row>
             <h2>SERVICES</h2>
           </Row>
-          <Row className="services-subtitle">
-            <p>
-              At PADES Printing, we know how important designs when it comes to
-              your branding, print and layout. So our printing team are always
-              on hand to get the job done. From the design for print to digital
-              design, our team will work hard to your deadlines, not ours.
-            </p>
-          </Row>
         </Container>
       </section>
       <Container className="services-page">
-
+        <Row className="services-subtitle">
+          <p>
+            At PADES Printing, we know how important designs when it comes to
+            your branding, print and layout. So our printing team are always on
+            hand to get the job done. From the design for print to digital
+            design, our team will work hard to your deadlines, not ours.
+          </p>
+        </Row>
         <Slider {...settings} className="services-slider">
           <div>
             <Col className="services-page-card-container">
@@ -164,7 +163,6 @@ export const Services = () => {
             </Col>
           </div>
         </Slider>
-
       </Container>
     </>
   );

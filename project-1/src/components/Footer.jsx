@@ -78,25 +78,25 @@ export function Footer() {
           <Col>
             <Nav className="justify-content-end footer-nav-links-container" activeKey="/home">
               <Nav.Item>
-                <NavLink to="/" className="footer-nav-links">
+                <NavLink to="/" className="footer-nav-links nav-logo">
                 Home
               </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink to="/about" className="footer-nav-links">
+                <NavLink to="/about" className="footer-nav-links nav-logo">
                 About
               </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink to="/contact" className="footer-nav-links">
+                <NavLink to="/contact" className="footer-nav-links nav-logo">
                 Contact
               </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links">Terms and Conditions</a>
+                <a href="" className="footer-nav-links nav-logo">Terms and Conditions</a>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links">Privacy</a>
+                <a href="" className="footer-nav-links nav-logo">Privacy</a>
               </Nav.Item>
             </Nav>
           </Col>
