@@ -43,13 +43,13 @@ export function Footer() {
               Lot 19-B, Block 215, Dollar St. Phase 8, North Fairview, Quezon
               City
             </p>
-            <h6>Production Address</h6>
-            <p>
+            <h6 className="hide-in-mobile">Production Address</h6>
+            <p className="hide-in-mobile">
               0215 Miraflor Extension, Miraflor Subdivision, Borol 1st Balagtas,
               Bulacan
             </p>
-            <h6>Branches</h6>
-            <ul>
+            <h6 className="hide-in-mobile">Branches</h6>
+            <ul className="hide-in-mobile">
               <li className="branches-list">
                 Purok 1, Brgy. Dalakit, Catarman N. Samar
               </li>
@@ -75,7 +75,7 @@ export function Footer() {
             Copyright &copy; 2023 Padro Design & Printing Services. All Rights
             Reserved
           </Col>
-          <Col>
+          <Col className="footer-nav-links-parent">
             <Nav className="justify-content-end footer-nav-links-container" activeKey="/home">
               <Nav.Item>
                 <NavLink to="/" className="footer-nav-links nav-logo">

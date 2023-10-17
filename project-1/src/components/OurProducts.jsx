@@ -20,7 +20,7 @@ export function OurProducts() {
           <Col>
             <Card className="services-card more-services">
               <div className="view-more">
-                <a className="view-more-text" href="/services">
+                <a className="view-more-text" href="/products">
                   View More{" "}
                   <span className="arrow-animation">
                     <i className="bi bi-arrow-right"></i>
