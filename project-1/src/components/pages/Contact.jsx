@@ -26,33 +26,31 @@ export const Contact = () => {
           <div className="contact-details">
             <h3 className="contact-title">Our contact details:</h3>
             <div className="contact-info">
-              <Col>
-                <Row className="contact">
-                  <a
-                    className="footer-link"
-                    href="mailto:padesprinting@yahoo.com"
-                  >
-                    <AiFillMail className="footer-icon" />
-                    padesprinting@yahoo.com
-                  </a>
-                </Row>
-                <Row className="contact">
-                  <a
-                    className="footer-link"
-                    href="https://www.facebook.com/PADESprintingServices"
-                    target="blank"
-                  >
-                    <AiFillFacebook className="footer-icon" />
-                    PADES Printing Services
-                  </a>
-                </Row>
-                <Row className="contact">
-                  <a className="footer-link" href="tel:+(02)8.659-4131">
-                    <BsFillTelephoneFill className="footer-icon" />
-                    (02)8.659-4131
-                  </a>
-                </Row>
-              </Col>
+              <div className="contact">
+                <a
+                  className="contact-link"
+                  href="https://www.facebook.com/PADESprintingServices"
+                  target="blank"
+                >
+                  <AiFillFacebook className="contact-icon" />
+                  PADES Printing Services
+                </a>
+              </div>
+              <div className="contact">
+                <a className="contact-link" href="tel:+(02)8.659-4131">
+                  <BsFillTelephoneFill className="contact-icon" />
+                  (02)8.659-4131
+                </a>
+              </div>
+              <div className="contact">
+                <a
+                  className="contact-link"
+                  href="mailto:padesprinting@yahoo.com"
+                >
+                  <AiFillMail className="contact-icon" />
+                  padesprinting@yahoo.com
+                </a>
+              </div>
             </div>
           </div>
           <div className="contact-locations"></div>
