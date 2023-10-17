@@ -11,7 +11,7 @@ export function OurClients() {
           <div className="row align-items-center h-100">
             <div className="container rounded">
               <h3 className="text-center">Our Clients</h3>
-              <div className="slider">
+              <div data-aos="fade-left" data-aos-duration="2500" className="slider">
                 <div className="logos">
                   <Row className="logo-row">
                     <ClientLogos clientName="DadasLechon" />

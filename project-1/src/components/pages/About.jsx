@@ -49,9 +49,9 @@ export const About = () => {
       </section>
       <section className="first-section">
         <div className="container">
-          <div className="about-des text-center">
-            <h3 data-aos="fade-up" className="about-subtitle text-center">COMPANY PROFILE</h3>
-            <div data-aos="fade-up" className="about-description text-start">
+          <div data-aos="fade-up" data-aos-duration="2000"className="about-des text-center">
+            <h3 className="about-subtitle text-center">COMPANY PROFILE</h3>
+            <div className="about-description text-start">
               <p>{message1}</p>
               <p>{message2}</p>
               <p>{message3}</p>
@@ -66,30 +66,34 @@ export const About = () => {
         <div className="container">
           <div className="row mv-row">
             <div className="our-mission col-md-6">
-              <h2 className="mission-title text-center">OUR MISSION</h2>
-              <ul>
-                <li className="mission-message">{missionmessage1}</li>
-                <li className="mission-message">{missionmessage2}</li>
-                <li className="mission-message">{missionmessage3}</li>
-                <li className="mission-message">{missionmessage4}</li>
-                <li className="mission-message">{missionmessage5}</li>
-                <li className="mission-message">{missionmessage6}</li>
-              </ul>
+              <h2 data-aos="fade-left" data-aos-duration="2000" className="mission-title text-center">OUR MISSION</h2>
+              <div data-aos="fade-right" data-aos-duration="2000">
+                <ul>
+                  <li className="mission-message">{missionmessage1}</li>
+                  <li className="mission-message">{missionmessage2}</li>
+                  <li className="mission-message">{missionmessage3}</li>
+                  <li className="mission-message">{missionmessage4}</li>
+                  <li className="mission-message">{missionmessage5}</li>
+                  <li className="mission-message">{missionmessage6}</li>
+                </ul>
+              </div>
             </div>
-            <div className="container col-md-6 our-mission-img text-center">
+            <div data-aos="flip-left" data-aos-duration="1500" className="container col-md-6 our-mission-img text-center">
               <img className="about-logo" src={missionLogo} alt=""></img>
             </div>
           </div>
           <div className="row mv-row">
             <div className="col-md-6 our-mission-img">
-              <div data-aos="fade-up">
+              <div data-aos="fade-right" data-aos-duration="1500">
                 <img className="about-logo" src={visionLogo} alt=""></img>
               </div>
             </div>
-            <div className="our-vision col-md-6">
+            <div data-aos="fade-left" data-aos-duration="2000" className="our-vision col-md-6">
               <h2 className="vision-title text-center">OUR VISION</h2>
-              <p className="vision-message">{visionmessage1}</p>
-              <p className="vision-message">{visionmessage2}</p>
+              <div data-aos="fade-left" data-aos-duration="2000">
+                <p className="vision-message">{visionmessage1}</p>
+                <p className="vision-message">{visionmessage2}</p>
+              </div>
             </div>
           </div>
         </div>
