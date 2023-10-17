@@ -7,10 +7,7 @@ import { About } from "./components/pages/About"
 import { Contact } from "./components/pages/Contact"
 import { Products } from "./components/pages/Products"
 import { Services } from "./components/pages/Services"
-
-import { OurClients } from "./components/OurClients";
 import { Footer } from "./components/Footer";
-import { OurProducts } from "./components/OurProducts";
 
 function App() {
   return (

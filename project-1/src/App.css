@@ -528,7 +528,6 @@ li {
   justify-content: center;
   height: 30vh;
   text-align: center;
-  padding-bottom: 1rem;
 }
 .services-banner h2 {
   color: white;
@@ -620,6 +619,38 @@ li {
   backdrop-filter: blur(10px);
   border: 0.5px solid rgb(245, 245, 245, 0.5);
   font-size: 40px;
+}
+
+.fp-section h3 {
+  font-family: var(--heading);
+  margin: 0;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.fprow1 {
+  height: auto;
+  padding: 0.5rem 0;
+}
+
+.fprow2 {
+  height: auto;
+  padding: 0.5rem 0;
+}
+
+.product-card {
+  max-height: 50vh;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.fp-product-img {
+  object-fit: contain;
+}
+
+.ap-section h3 {
+  font-family: var(--heading);
+  margin: 0;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 /*  MOBILE RESPONSIVENESS */
