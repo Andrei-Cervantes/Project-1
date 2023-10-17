@@ -324,21 +324,27 @@
 .about-heading {
   background: url(./assets/bannerbg2.png) no-repeat center center;
   position: relative;
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  text-align: center;
 }
 
 .about-title {
   color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   font-family: var(--heading);
   position: relative;
   text-shadow: 2px 2px #121212;
   letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 2rem 0;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  animation: mymovetitle 2s;
   border: 0.5px solid rgb(245, 245, 245, 0.5);
+  font-size: 40px;
+  animation: mymovetitle 2s;
 }
 
 @keyframes mymovetitle {
@@ -353,12 +359,10 @@
 }
 
 .about-subtitle {
-  color: white;
+  color: black;
   letter-spacing: 7px;
   font-family: var(--heading);
   padding-top: 1rem;
-  padding-left: 5rem;
-  padding-right: 1rem;
   position: relative;
   animation: mymovesubtitle 2s;
 }
@@ -374,13 +378,17 @@
   }
 }
 
+.first-section {
+  padding-top: 1rem ;
+  padding-bottom: 1rem;
+}
+
 .about-des {
-  color: white;
+  color: black;
   position: relative;
   animation: fade-in 2s;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  text-shadow: 1px 1px #121212;
   border: 0.5px solid rgb(245, 245, 245, 0.5);
 }
 
@@ -396,7 +404,6 @@
 .about-description {
   position: relative;
   animation: mymovedescription 2s;
-  padding: 0.5rem 5rem;
 }
 
 @keyframes mymovedescription {

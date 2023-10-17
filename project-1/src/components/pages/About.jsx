@@ -36,24 +36,28 @@ export const About = () => {
 
   return (
     <>
-      <section className="about-heading" id="about">
+      <section className="about-heading text-center" id="about">
         <div className="container about-hero">
           <div className="row">
-            <div className="col-md-12 text-center">
+            <div className="col-md-12">
               <h2 className="about-title">
                 ABOUT PADRO DESIGN & PRINTING SERVICES
               </h2>
-              <div className="about-des text-center">
-                <h3 className="about-subtitle text-start">COMPANY PROFILE</h3>
-                <div className="about-description text-start">
-                  <p>{message1}</p>
-                  <p>{message2}</p>
-                  <p>{message3}</p>
-                  <p>
-                    <b>{message4}</b>
-                  </p>
-                </div>
-              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="first-section">
+        <div className="container">
+          <div className="about-des text-center">
+            <h3 className="about-subtitle text-center">COMPANY PROFILE</h3>
+            <div className="about-description text-start">
+              <p>{message1}</p>
+              <p>{message2}</p>
+              <p>{message3}</p>
+              <p>
+                <b>{message4}</b>
+              </p>
             </div>
           </div>
         </div>
@@ -72,15 +76,15 @@ export const About = () => {
                 <li className="mission-message">{missionmessage6}</li>
               </ul>
             </div>
-            <div className="container col-md-6 our-mission-img">
+            <div className="container col-md-6 our-mission-img text-center">
               <img className="about-logo" src={missionLogo} alt=""></img>
             </div>
           </div>
           <div className="row mv-row">
-            <div className="col-md-6">
+            <div className="col-md-6 our-mission-img text-center">
               <img className="about-logo" src={visionLogo} alt=""></img>
             </div>
-            <div className=" our-vision col-md-6">
+            <div className="our-vision col-md-6">
               <h2 className="vision-title text-center">OUR VISION</h2>
               <p className="vision-message">{visionmessage1}</p>
               <p className="vision-message">{visionmessage2}</p>
