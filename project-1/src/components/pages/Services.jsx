@@ -73,7 +73,7 @@ export const Services = () => {
     <>
       <section className="services-banner">
         <Container className="services-content">
-          <Row>
+          <Row className="services-h2row">
             <h2>SERVICES</h2>
           </Row>
         </Container>

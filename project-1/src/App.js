@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { Home } from "./components/pages/Home"
 import { About } from "./components/pages/About"
 import { Contact } from "./components/pages/Contact"
-import { Products } from "./components/pages/Products"
+import {Products }from "./components/pages/Products"
 import { Services } from "./components/pages/Services"
 import { Footer } from "./components/Footer";
 import AOS from "aos";

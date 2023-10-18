@@ -316,9 +316,8 @@
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: inherit;
-  padding-bottom: 1rem;
 }
 
 .about-heading {
@@ -380,7 +379,7 @@
 }
 
 .mv-row {
-  height: 400px
+  height: 350px
 }
 
 .our-mission {
@@ -501,6 +500,10 @@ li {
 .services-title h2 {
   margin: 0;
 }
+.services-h2row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .services-slider {
   margin: 0 1rem 2rem 1rem;
@@ -544,7 +547,10 @@ li {
   height: 30vh;
   text-align: center;
 }
-
+.products-h2row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+} 
 .products-banner h2 {
   color: white;
   font-family: var(--heading);
@@ -553,7 +559,7 @@ li {
   letter-spacing: 2px;
   letter-spacing: 2px;
   margin: 0;
-  padding: 2rem 0;
+  padding: 2rem ;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 0.5px solid rgb(245, 245, 245, 0.5);
@@ -591,6 +597,45 @@ li {
   margin: 0;
   padding: 1.5rem 0 0.5rem 0;
 }
+
+.aproject-card {
+  width: 253px;
+  height: 300px;
+  border-radius: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.apsection-container {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.aproject-card {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.aproduct-name {
+  position: absolute;
+  color: #f5f5f5;
+  background-color: rgba(18, 18, 18, 0.8);
+  top: 10%;
+  right: 0;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 8px 0 0 8px;
+  font-family: var(--heading);
+  width: auto;
+  transform: translateX(110%);
+  transition: transform 0.3s ease-in-out ;
+  transform: translateX(110%);
+}
+
+.aproject-card:hover .aproduct-name {
+  transform: translateX(0%);
+}
+
 
 /*  MOBILE RESPONSIVENESS */
 
