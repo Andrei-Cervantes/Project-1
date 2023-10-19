@@ -1,6 +1,7 @@
 import React from "react";
 import missionLogo from "./assets/AboutImages/mission.png";
 import visionLogo from "./assets/AboutImages/vision.png";
+import { OurClients } from "../OurClients";
 
 export const About = () => {
   let message1 =
@@ -54,6 +55,11 @@ export const About = () => {
           </div>
         </div>
       </section>
+      <section className="second-section">
+        <div className="container">
+          <h3 className="about-subtitle text-center">OUR CLIENTS</h3>
+        </div>
+      </section>
       <section className="mission-vision">
         <div className="container">
           <div className="row mv-row">
@@ -70,19 +76,19 @@ export const About = () => {
                 </ul>
               </div>
             </div>
-            <div data-aos="flip-left" data-aos-duration="1500" className="container col-md-6 our-mission-img text-center">
+            <div data-aos="flip-left" data-aos-duration="1500" className="about-logo-container container col-md-6 ">
               <img className="about-logo" src={missionLogo} alt=""></img>
             </div>
           </div>
           <div className="row mv-row">
-            <div className="col-md-6 our-mission-img">
-              <div data-aos="fade-right" data-aos-duration="1500">
+            <div data-aos="flip-right" data-aos-duration="1500" className=" about-logo-container container col-md-6 ">
                 <img className="about-logo" src={visionLogo} alt=""></img>
-              </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="2000" className="our-vision col-md-6">
-              <h2 className="vision-title text-center">OUR VISION</h2>
-              <div data-aos="fade-left" data-aos-duration="2000">
+            <div  className="our-vision col-md-6">
+              <div data-aos="fade-right" data-aos-duration="2000">
+                <h2 className="vision-title text-center">OUR VISION</h2>
+              </div>
+              <div  data-aos="fade-left" data-aos-duration="2000">
                 <p className="vision-message">{visionmessage1}</p>
                 <p className="vision-message">{visionmessage2}</p>
               </div>
