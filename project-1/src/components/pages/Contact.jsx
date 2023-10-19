@@ -38,9 +38,9 @@ export const Contact = () => {
       <section>
         <div className="contact-container">
           <div className="contact-details">
-            <h3 className="contact-title">Our contact details:</h3>
+            <h3 data-aos="zoom-in-down" data-aos-duration="1000" className="contact-title">OUR CONTACT DETAILS:</h3>
             <div className="contact-info">
-              <div className="contact">
+              <div data-aos="zoom-in-right" data-aos-duration="2000" className="contact">
                 <a
                   className="contact-link"
                   href="https://www.facebook.com/PADESprintingServices"
@@ -50,13 +50,13 @@ export const Contact = () => {
                   PADES Printing Services
                 </a>
               </div>
-              <div className="contact">
+              <div data-aos="zoom-in-up" data-aos-duration="2000" className="contact">
                 <a className="contact-link" href="tel:+(02)8.659-4131">
                   <BsFillTelephoneFill className="contact-icon" />
                   (02)8.659-4131
                 </a>
               </div>
-              <div className="contact">
+              <div data-aos="zoom-in-up" data-aos-duration="2000" className="contact">
                 <a
                   className="contact-link"
                   href="mailto:enquiries@padesprinting.com.ph"
@@ -65,7 +65,7 @@ export const Contact = () => {
                   enquiries@padesprinting.com.ph
                 </a>
               </div>
-              <div className="contact">
+              <div data-aos="zoom-in-left" data-aos-duration="2000" className="contact">
                 <a
                   className="contact-link"
                   href="mailto:padesprinting@yahoo.com"
@@ -77,8 +77,11 @@ export const Contact = () => {
             </div>
           </div>
           <div className="contact-locations">
+            <h3 data-aos="zoom-in-down" data-aos-duration="3000" className="text-center">COME VISIT US:</h3>
             <div className="locations-container">
               <Carousel
+                data-aos="flip-up"
+                data-aos-duration="3000"
                 activeIndex={index}
                 onSelect={handleSelect}
                 className="locations-carousel"
@@ -114,8 +117,11 @@ export const Contact = () => {
               </Carousel>
               <br />
               <Carousel
+                data-aos="flip-down"
+                data-aos-duration="3000"
                 activeIndex={index}
                 onSelect={handleSelect}
+                className="locations-title-carousel"
                 interval={null}
                 indicators={false}
                 fade={true}
