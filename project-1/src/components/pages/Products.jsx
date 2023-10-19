@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/esm/Row";
 import Container from "react-bootstrap/esm/Container";
 import Image from "react-bootstrap/Image";
@@ -43,6 +43,90 @@ const bookImages = [book1, book2, book3, book4, book5, book6];
 const calendarImages = [calendar1, calendar2];
 
 export const Products = () => {
+  const [hoveredCard1, setHoveredCard1] = useState(false);
+  const [hoveredCard2, setHoveredCard2] = useState(false);
+  const [hoveredCard3, setHoveredCard3] = useState(false);
+  const [hoveredCard4, setHoveredCard4] = useState(false);
+  const [hoveredCard5, setHoveredCard5] = useState(false);
+  const [hoveredCard6, setHoveredCard6] = useState(false);
+  const [hoveredCard7, setHoveredCard7] = useState(false);
+  const [hoveredCard8, setHoveredCard8] = useState(false);
+
+  const [hoveredCard9, setHoveredCard9] = useState(false);
+  const [hoveredCard10, setHoveredCard10] = useState(false);
+  const [hoveredCard11, setHoveredCard11] = useState(false);
+  const [hoveredCard12, setHoveredCard12] = useState(false);
+  const [hoveredCard13, setHoveredCard13] = useState(false);
+  const [hoveredCard14, setHoveredCard14] = useState(false);
+  const [hoveredCard15, setHoveredCard15] = useState(false);
+  const [hoveredCard16, setHoveredCard16] = useState(false);
+
+  const toggleHoverCard1 = () => {
+    setHoveredCard1(true);
+    setTimeout(() => setHoveredCard1(false), 4000);
+  };
+  const toggleHoverCard2 = () => {
+    setHoveredCard2(true);
+    setTimeout(() => setHoveredCard2(false), 4000);
+  };
+  const toggleHoverCard3 = () => {
+    setHoveredCard3(true);
+    setTimeout(() => setHoveredCard3(false), 4000);
+  };
+  const toggleHoverCard4 = () => {
+    setHoveredCard4(true);
+    setTimeout(() => setHoveredCard4(false), 4000);
+  };
+  const toggleHoverCard5 = () => {
+    setHoveredCard5(true);
+    setTimeout(() => setHoveredCard5(false), 4000);
+  };
+  const toggleHoverCard6 = () => {
+    setHoveredCard6(true);
+    setTimeout(() => setHoveredCard6(false), 4000);
+  };
+  const toggleHoverCard7 = () => {
+    setHoveredCard7(true);
+    setTimeout(() => setHoveredCard7(false), 4000);
+  };
+  const toggleHoverCard8 = () => {
+    setHoveredCard8(true);
+    setTimeout(() => setHoveredCard8(false), 4000);
+  };
+
+  const toggleHoverCard9 = () => {
+    setHoveredCard9(true);
+    setTimeout(() => setHoveredCard9(false), 4000);
+  };
+  const toggleHoverCard10 = () => {
+    setHoveredCard10(true);
+    setTimeout(() => setHoveredCard10(false), 4000);
+  };
+  const toggleHoverCard11 = () => {
+    setHoveredCard11(true);
+    setTimeout(() => setHoveredCard11(false), 4000);
+  };
+  const toggleHoverCard12 = () => {
+    setHoveredCard12(true);
+    setTimeout(() => setHoveredCard12(false), 4000);
+  };
+  const toggleHoverCard13 = () => {
+    setHoveredCard13(true);
+    setTimeout(() => setHoveredCard13(false), 4000);
+  };
+  const toggleHoverCard14 = () => {
+    setHoveredCard14(true);
+    setTimeout(() => setHoveredCard14(false), 4000);
+  };
+  const toggleHoverCard15 = () => {
+    setHoveredCard15(true);
+    setTimeout(() => setHoveredCard15(false), 4000);
+  };
+  const toggleHoverCard16 = () => {
+    setHoveredCard16(true);
+    setTimeout(() => setHoveredCard16(false), 4000);
+  };
+
   return (
     <>
       <section className="products-banner">
@@ -95,36 +179,89 @@ export const Products = () => {
           </div>
           <Row className="project-card-row">
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard1
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard1}
+              >
                 <Card.Img src={p1} />
-                <p>Colorful Vest</p>
+                <div>
+                  <p className="aproduct-name">Safety Vests</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard2
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard2}
+              >
                 <Card.Img src={p2} />
+                <div>
+                  <p className="aproduct-name">Business Cards</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard3
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard3}
+              >
                 <Card.Img src={p3} />
+                <div>
+                  <p className="aproduct-name">Brochures</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard4
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard4}>
                 <Card.Img src={p4} />
+                <div>
+                  <p className="aproduct-name">Customized Umbrellas</p>
+                </div>
               </Card>
             </Col>
           </Row>
 
           <Row className="project-card-row">
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard5
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard5}>
                 <Card.Img src={p5} />
+                <div>
+                  <p className="aproduct-name">Customized Mugs</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard6
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard6}>
                 <Card.Img src={p6} />
                 <div>
                   <p className="aproduct-name">Pull-up Banners</p>
@@ -132,59 +269,149 @@ export const Products = () => {
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard7
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard7}>
                 <Card.Img src={p7} />
+                <div>
+                  <p className="aproduct-name">Safety Long Sleeve Shirts</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard8
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard8}>
                 <Card.Img src={p8} />
+                <div>
+                  <p className="aproduct-name">Customized Tumblers</p>
+                </div>
               </Card>
             </Col>
           </Row>
 
           <Row className="project-card-row">
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard9
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard9}>
                 <Card.Img src={p9} />
+                <div>
+                  <p className="aproduct-name">ID Cards & Lanyards</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard10
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard10}>
                 <Card.Img src={p10} />
+                <div>
+                  <p className="aproduct-name">Customized Tote Bags</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard11
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard11}>
                 <Card.Img src={p11} />
+                <div>
+                  <p className="aproduct-name">Business Forms</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard12
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard12}>
                 <Card.Img src={p12} />
+                <div>
+                  <p className="aproduct-name">Notebooks</p>
+                </div>
               </Card>
             </Col>
           </Row>
 
           <Row className="project-card-row">
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard13
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard13}>
                 <Card.Img src={p13} />
+                <div>
+                  <p className="aproduct-name">Headwear Caps</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard14
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard14}>
                 <Card.Img src={p14} />
+                <div>
+                  <p className="aproduct-name">Spiral Notepads</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard15
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard15}>
                 <Card.Img src={p15} />
+                <div>
+                  <p className="aproduct-name">Commercial Prints</p>
+                </div>
               </Card>
             </Col>
             <Col>
-              <Card className="aproject-card">
+              <Card
+                className={
+                  hoveredCard16
+                    ? "aproject-card-hover aproject-card"
+                    : "aproject-card"
+                }
+                onMouseEnter={toggleHoverCard16}>
                 <Card.Img src={p16} />
+                <div>
+                  <p className="aproduct-name">Book Binds</p>
+                </div>
               </Card>
             </Col>
           </Row>
