@@ -275,8 +275,8 @@
 
 .vector-license-container {
   padding: 0;
-  font-size: 12px;
-  margin-bottom: 0.5rem; 
+  font-size: 12px; 
+  margin-top: 0.5rem;
   color: rgb(245, 245, 245, 0.75);
 }
 .vector-license-container a {

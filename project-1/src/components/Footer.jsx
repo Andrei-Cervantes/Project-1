@@ -84,19 +84,6 @@ export function Footer() {
 
       <Container className="footer-copyright">
         <Row>
-          <Col className="vector-license-container">
-            <span className="vector-license">
-              <a href="https://storyset.com/work" target="_blank">
-                Work illustrations by Storyset
-              </a>
-            </span>
-            <span className="vector-license">
-            <a href="https://www.freepik.com/free-photo/abstract-paint-splashing-vibrant-colors-liquid-motion-generated-by-ai_41358549.htm#query=cmyk&position=15&from_view=search&track=sph" target="_blank">Image by vecstock</a> on Freepik
-            </span>
-          </Col>
-          <Col xs={6}></Col>
-        </Row>
-        <Row>
           <Col className="copyright">
             Copyright &copy; 2023 PADES Printing. All Rights Reserved
           </Col>
@@ -132,6 +119,19 @@ export function Footer() {
               </Nav.Item>
             </Nav>
           </Col>
+        </Row>
+        <Row>
+          <Col className="vector-license-container">
+            <span className="vector-license">
+              <a href="https://storyset.com/work" target="_blank">
+                Work illustrations by Storyset
+              </a>
+            </span>
+            <span className="vector-license">
+            <a href="https://www.freepik.com/free-photo/abstract-paint-splashing-vibrant-colors-liquid-motion-generated-by-ai_41358549.htm#query=cmyk&position=15&from_view=search&track=sph" target="_blank">Image by vecstock</a> on Freepik
+            </span>
+          </Col>
+          <Col xs={6}></Col>
         </Row>
       </Container>
     </div>
