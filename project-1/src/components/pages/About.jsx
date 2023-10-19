@@ -1,7 +1,7 @@
 import React from "react";
 import missionLogo from "./assets/AboutImages/mission.png";
 import visionLogo from "./assets/AboutImages/vision.png";
-import { OurClients } from "../OurClients";
+import { ClientLogos } from "../ClientLogos";
 
 export const About = () => {
   let message1 =
@@ -58,6 +58,39 @@ export const About = () => {
       <section className="second-section">
         <div className="container">
           <h3 className="about-subtitle text-center">OUR CLIENTS</h3>
+          <div className="container">
+            <ClientLogos clientName="DadasLechon"/>
+            <ClientLogos clientName="ElordeBoxingGym" />
+            <ClientLogos clientName="HealingGaling" />
+            <ClientLogos clientName="ZWMPH" />
+            <ClientLogos clientName="CommTrend" />
+            <ClientLogos clientName="dTurbanadaTransport" />
+            <ClientLogos clientName="FMGlobal" />
+            <ClientLogos clientName="FordecioPowerDriveCorporation" />
+            <ClientLogos clientName="GSTS" />
+            <ClientLogos clientName="SinoCargoworks" />
+            <ClientLogos clientName="PUPStaMaria" />
+            <ClientLogos clientName="PNP" />
+            <ClientLogos clientName="Bossh" />
+            <ClientLogos clientName="VerenasCafe" />
+            <ClientLogos clientName="SanJoseAcademy" />
+            <ClientLogos clientName="ProSolutions" />
+            <ClientLogos clientName="Acay" />
+            <ClientLogos clientName="allenmc" />
+            <ClientLogos clientName="anSheng" />
+            <ClientLogos clientName="bioQuick" />
+            <ClientLogos clientName="Catarman" />
+            <ClientLogos clientName="cocacola" />
+            <ClientLogos clientName="DivinaPastora" />
+            <ClientLogos clientName="easternVisayas" />
+            <ClientLogos clientName="Florentino" />
+            <ClientLogos clientName="LearningInstitute" />
+            <ClientLogos clientName="northernSamar" />
+            <ClientLogos clientName="RamMallari" />
+            <ClientLogos clientName="SerapEngg" />
+            <ClientLogos clientName="takeMeOut" />
+            <ClientLogos clientName="yoloSolution" />
+          </div>
         </div>
       </section>
       <section className="mission-vision">
@@ -80,7 +113,7 @@ export const About = () => {
               <img className="about-logo" src={missionLogo} alt=""></img>
             </div>
           </div>
-          <div className="row mv-row">
+          <div className="row my-row">
             <div data-aos="flip-right" data-aos-duration="1500" className=" about-logo-container container col-md-6 ">
                 <img className="about-logo" src={visionLogo} alt=""></img>
             </div>
