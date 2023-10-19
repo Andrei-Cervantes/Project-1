@@ -1,14 +1,6 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import missionLogo from "./assets/AboutImages/mission.png";
 import visionLogo from "./assets/AboutImages/vision.png";
-import doc1 from "./assets/AboutImages/doc1.png";
-import doc2 from "./assets/AboutImages/doc2.png";
-import doc3 from "./assets/AboutImages/doc3.png";
-import doc4 from "./assets/AboutImages/doc4.png";
-import doc5 from "./assets/AboutImages/doc5.png";
-import doc6 from "./assets/AboutImages/doc6.png";
-import doc7 from "./assets/AboutImages/doc7.png";
 
 export const About = () => {
   let message1 =
@@ -41,7 +33,7 @@ export const About = () => {
           <div className="row">
             <div className="col-md-12">
               <h2 className="about-title">
-                ABOUT PADRO DESIGN & PRINTING SERVICES
+                ABOUT PADES PRINTING
               </h2>
             </div>
           </div>
@@ -96,51 +88,6 @@ export const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="documents-img">
-        <div data-aos="fade-right" data-aos-duration="2000" className="container">
-          <h2 className="documents-title text-center">LEGAL DOCUMENTATION</h2>
-        </div>
-
-        <div data-aos="fade-left" data-aos-duration="2000" className="my-carousel container">
-          <Carousel fade data-bs-theme="dark">
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc1}></img>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc2}></img>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc3}></img>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc4}></img>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc5}></img>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc6}></img>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="text-center">
-                <img className="docu-property" alt="" src={doc7}></img>
-              </div>
-            </Carousel.Item>
-          </Carousel>
         </div>
       </section>
     </>
