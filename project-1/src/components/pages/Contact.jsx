@@ -118,6 +118,7 @@ export const Contact = () => {
                 onSelect={handleSelect}
                 interval={null}
                 indicators={false}
+                fade={true}
               >
                 <Carousel.Item>
                   <div className="text-center">
