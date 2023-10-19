@@ -11,10 +11,10 @@ import { NavLink } from "react-router-dom";
 export function Footer() {
   return (
     <div className="footer">
-      <Container>
+      <Container className="footer-top">
         <Row>
           <Col className="footer-logo-container">
-            <img id="footer-logo" src={logo} alt="" />  
+            <img id="footer-logo" src={logo} alt="" />
           </Col>
           <Col>
             <h3>Contact Us</h3>
@@ -25,7 +25,20 @@ export function Footer() {
               </a>
             </Row>
             <Row className="footer-contact">
-              <a className="footer-link" href="https://www.facebook.com/PADESprintingServices" target="blank">
+              <a
+                className="footer-link"
+                href="mailto:enquiries@padesprinting.com.ph"
+              >
+                <AiFillMail className="footer-icon" />
+                enquiries@padesprinting.com.ph
+              </a>
+            </Row>
+            <Row className="footer-contact">
+              <a
+                className="footer-link"
+                href="https://www.facebook.com/PADESprintingServices"
+                target="blank"
+              >
                 <AiFillFacebook className="footer-icon" />
                 PADES Printing Services
               </a>
@@ -71,32 +84,51 @@ export function Footer() {
 
       <Container className="footer-copyright">
         <Row>
+          <Col className="vector-license-container">
+            <span className="vector-license">
+              <a href="https://storyset.com/work" target="_blank">
+                Work illustrations by Storyset
+              </a>
+            </span>
+            <span className="vector-license">
+            <a href="https://www.freepik.com/free-photo/abstract-paint-splashing-vibrant-colors-liquid-motion-generated-by-ai_41358549.htm#query=cmyk&position=15&from_view=search&track=sph" target="_blank">Image by vecstock</a> on Freepik
+            </span>
+          </Col>
+          <Col xs={6}></Col>
+        </Row>
+        <Row>
           <Col className="copyright">
-            Copyright &copy; 2023 Padro Design & Printing Services. All Rights
-            Reserved
+            Copyright &copy; 2023 PADES Printing. All Rights Reserved
           </Col>
           <Col className="footer-nav-links-parent">
-            <Nav className="justify-content-end footer-nav-links-container" activeKey="/home">
+            <Nav
+              className="justify-content-end footer-nav-links-container"
+              activeKey="/home"
+            >
               <Nav.Item>
                 <NavLink to="/" className="footer-nav-links nav-logo">
-                Home
-              </NavLink>
+                  Home
+                </NavLink>
               </Nav.Item>
               <Nav.Item>
                 <NavLink to="/about" className="footer-nav-links nav-logo">
-                About
-              </NavLink>
+                  About
+                </NavLink>
               </Nav.Item>
               <Nav.Item>
                 <NavLink to="/contact" className="footer-nav-links nav-logo">
-                Contact
-              </NavLink>
+                  Contact
+                </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links nav-logo">Terms and Conditions</a>
+                <a href="" className="footer-nav-links nav-logo">
+                  Terms and Conditions
+                </a>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links nav-logo">Privacy</a>
+                <a href="" className="footer-nav-links nav-logo">
+                  Privacy
+                </a>
               </Nav.Item>
             </Nav>
           </Col>
