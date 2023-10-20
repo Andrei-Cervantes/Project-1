@@ -12,11 +12,11 @@ export function Footer() {
   return (
     <div className="footer">
       <Container className="footer-top">
-        <Row>
+        <Row className="footer-mainrow">
           <Col className="footer-logo-container">
             <img id="footer-logo" src={logo} alt="" />
           </Col>
-          <Col>
+          <Col className="contact-us-container">
             <h3>Contact Us</h3>
             <Row className="footer-contact">
               <a className="footer-link" href="mailto:padesprinting@yahoo.com">

@@ -759,6 +759,7 @@ li {
 
   /* SERVICES PAGE STYLING - MOBILE */
   .services-banner {
+    height: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -784,6 +785,7 @@ li {
   }
   .services-subtitle p {
     margin: 0;
+    padding-bottom: 1rem;
   }
   .services-page-card-container {
     padding: 0.5rem;
@@ -805,22 +807,55 @@ li {
 
   /* FOOTER STYLES - MOBILE */
   .footer {
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
-  .footer img {
-    margin-left: 1rem;
+  .footer p {
+    font-size: 14px;
+  }
+  .footer-mainrow {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .footer h3 {
+    font-size: 20px;
+  }
+  .footer-logo-container {
+    flex-shrink: 1;
+    max-width: fit-content;
   }
   #footer-logo {
     width: 100px;
     height: 100px;
   }
-  .footer-address {
-    max-width: 100%;
-    flex: 0 0 100%;
-    padding: 1rem 2rem 0 1rem;
+  .contact-us-container {
+    order: 1;
+    padding: 0;
+    margin-top: 1rem;
   }
-  .footer-address h6, .footer-address p{
-    margin-bottom: 0.5rem;
+  .footer-address {
+    padding: 0;
+    padding-left: 1rem;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+  }
+  .footer-address h6 {
+    margin-bottom: 2px;
+    margin-right: -1rem;
+  }
+  .footer-address p{
+    margin-bottom: 0;
+    margin-right: -1rem;
+  }
+  .footer-contact {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-contact a {
+    padding: 0;
+    font-size: 15px;
   }
   .footer-address li {
     margin-bottom: 0.1rem;
@@ -828,6 +863,9 @@ li {
   .footer hr {
     margin: 0.5rem -1rem;
     background-color: #f5f5f5;
+  }
+  .footer-copyright {
+    padding: 0;
   }
   .footer-copyright div {
     display: block;
@@ -850,5 +888,8 @@ li {
   .footer-nav-links-parent {
     padding-top: 0.25rem;
     margin: -4px;
+  }
+  .footer-copyright .row:nth-of-type(2) {
+   padding-left: 15px; 
   }
 }
