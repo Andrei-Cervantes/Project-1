@@ -178,7 +178,7 @@ export const Products = () => {
             <h3>Available Products</h3>
           </div>
           <Row className="project-card-row">
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard1
@@ -193,7 +193,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard2
@@ -208,7 +208,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard3
@@ -223,7 +223,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard4
@@ -240,7 +240,7 @@ export const Products = () => {
           </Row>
 
           <Row className="project-card-row">
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard5
@@ -254,7 +254,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard6
@@ -268,7 +268,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard7
@@ -282,7 +282,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard8
@@ -299,7 +299,7 @@ export const Products = () => {
           </Row>
 
           <Row className="project-card-row">
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard9
@@ -313,7 +313,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard10
@@ -327,7 +327,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard11
@@ -341,7 +341,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard12
@@ -358,7 +358,7 @@ export const Products = () => {
           </Row>
 
           <Row className="project-card-row">
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard13
@@ -372,7 +372,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard14
@@ -386,7 +386,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard15
@@ -400,7 +400,7 @@ export const Products = () => {
                 </div>
               </Card>
             </Col>
-            <Col>
+            <Col xs={6} lg={3}>
               <Card
                 className={
                   hoveredCard16

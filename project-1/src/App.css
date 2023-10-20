@@ -756,6 +756,47 @@ li {
   /* CONTACT PAGE STYLING - MOBILE*/
 
   /* PRODUCTS PAGE STYLING - MOBILE*/
+  .products-banner {
+    height: 20vh;
+    width: 100%;
+  }
+  .products-banner h2 {
+    padding: 0;
+  }
+  .fp-section h3 {
+    font-size: 22px;
+  }
+  .fprow1 {
+    padding-top: 0;
+  }
+  .fprow1 .col-6 {
+    max-width: 50%;
+  }
+  .fprow1 .col-6:nth-child(1) {
+    padding-right: 0;
+  }
+  .fprow1 .col-6:nth-child(2) {
+    padding-left: 0;
+  }
+  .fprow2 {
+    margin: 0 0;
+    padding-top: 0;
+  }
+  .fprow2 .col-4 {
+    padding: 0;
+  }
+
+  .ap-section h3 {
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+  .aproject-card {
+    width: auto;
+    height: auto;
+  }
+  .aproject-card p {
+    font-size: 14px;
+  }
 
   /* SERVICES PAGE STYLING - MOBILE */
   .services-banner {
@@ -763,15 +804,6 @@ li {
     width: 100%;
     display: flex;
     align-items: center;
-  }
-  .services-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 0;
-    height: auto;
-    width: 92%;
-    padding: 1rem;
-    padding-top: 1.5rem;
   }
   .services-banner h2 {
     padding: 0;
@@ -786,6 +818,7 @@ li {
   .services-subtitle p {
     margin: 0;
     padding-bottom: 1rem;
+    text-align: justify;
   }
   .services-page-card-container {
     padding: 0.5rem;
@@ -840,6 +873,7 @@ li {
     flex-direction: column;
     justify-content: center;
     text-align: right;
+    flex: 0 0 100%;
   }
   .footer-address h6 {
     margin-bottom: 2px;
