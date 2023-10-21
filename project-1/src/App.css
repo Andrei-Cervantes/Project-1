@@ -827,6 +827,7 @@ li {
     font-size: 16px;
     text-align: right;
     width: auto;
+    font-size: 14px;
   }
   #root > div > div.services-page.container > div > div.slick-list > div > div:nth-child(6) > div > div > div > div > div.services-page-card-title.card-title.h5 {
     margin-left: 3.5rem;
@@ -867,21 +868,18 @@ li {
   }
   .footer-address {
     padding: 0;
-    padding-left: 1rem;
-    max-width: 65%;
     display: flex;
+    max-width: max-content;
     flex-direction: column;
     justify-content: center;
     text-align: right;
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% - 116px);
   }
   .footer-address h6 {
     margin-bottom: 2px;
-    margin-right: -1rem;
   }
   .footer-address p{
     margin-bottom: 0;
-    margin-right: -1rem;
   }
   .footer-contact {
     margin-left: 0;
@@ -907,7 +905,8 @@ li {
   .copyright {
     padding-top: 0.25rem;
     padding-left: 1rem;
-    font-size: 15px;
+    font-size: 13px;
+    text-align: center;
   }
   .footer .hide-in-mobile {
     display: none;
@@ -918,12 +917,12 @@ li {
   }
   .footer-copyright .nav-item .footer-nav-links {
     padding: 4px;
+    padding-bottom: 0;
   }
   .footer-nav-links-parent {
-    padding-top: 0.25rem;
-    margin: -4px;
+    text-align: center;
   }
   .footer-copyright .row:nth-of-type(2) {
-   padding-left: 15px; 
+   text-align: center;
   }
 }
