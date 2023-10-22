@@ -18,6 +18,7 @@ import catarman from "./assets/ContactImages/catarman.jpg";
 import borongan from "./assets/ContactImages/borongan.jpg";
 import calbayog from "./assets/ContactImages/calbayog.jpg";
 import tacloban from "./assets/ContactImages/tacloban.jpg";
+import maincampus from "./assets/ContactImages/maincampus.jpg";
 
 export const Contact = () => {
   const [index, setIndex] = useState(0);
@@ -91,7 +92,7 @@ export const Contact = () => {
               >
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={main} classname="location-images"></img>
+                    <img src={maincampus} classname="location-images"></img>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -119,6 +120,7 @@ export const Contact = () => {
               <Carousel
                 data-aos="flip-down"
                 data-aos-duration="3000"
+                data-aos-anchor-placement="top-bottom"
                 activeIndex={index}
                 onSelect={handleSelect}
                 className="locations-title-carousel"

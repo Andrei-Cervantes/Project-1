@@ -87,13 +87,13 @@
 }
 
 .locations-carousel {
-    height: 80vh;
+    height: auto;
     width: auto;
     padding: 1rem;
 }
 
 .locations-carousel img {
-    height: 80vh;
+    height: auto;
     width: auto;
 }
 
