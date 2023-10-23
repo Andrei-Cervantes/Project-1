@@ -57,39 +57,51 @@ export const About = () => {
       </section>
       <section className="second-section">
         <div className="container">
-          <h3 className="about-subtitle text-center">OUR CLIENTS</h3>
+          <h3 data-aos="fade-up" data-aos-duration="3000" className="about-subtitle text-center">OUR CLIENTS</h3>
           <div className="container">
-            <ClientLogos clientName="DadasLechon"/>
-            <ClientLogos clientName="ElordeBoxingGym" />
-            <ClientLogos clientName="HealingGaling" />
-            <ClientLogos clientName="ZWMPH" />
-            <ClientLogos clientName="CommTrend" />
-            <ClientLogos clientName="dTurbanadaTransport" />
-            <ClientLogos clientName="FMGlobal" />
-            <ClientLogos clientName="FordecioPowerDriveCorporation" />
-            <ClientLogos clientName="GSTS" />
-            <ClientLogos clientName="SinoCargoworks" />
-            <ClientLogos clientName="PUPStaMaria" />
-            <ClientLogos clientName="PNP" />
-            <ClientLogos clientName="Bossh" />
-            <ClientLogos clientName="VerenasCafe" />
-            <ClientLogos clientName="SanJoseAcademy" />
-            <ClientLogos clientName="ProSolutions" />
-            <ClientLogos clientName="Acay" />
-            <ClientLogos clientName="allenmc" />
-            <ClientLogos clientName="anSheng" />
-            <ClientLogos clientName="bioQuick" />
-            <ClientLogos clientName="Catarman" />
-            <ClientLogos clientName="cocacola" />
-            <ClientLogos clientName="DivinaPastora" />
-            <ClientLogos clientName="easternVisayas" />
-            <ClientLogos clientName="Florentino" />
-            <ClientLogos clientName="LearningInstitute" />
-            <ClientLogos clientName="northernSamar" />
-            <ClientLogos clientName="RamMallari" />
-            <ClientLogos clientName="SerapEngg" />
-            <ClientLogos clientName="takeMeOut" />
-            <ClientLogos clientName="yoloSolution" />
+
+            <div data-aos="fade-up" data-aos-duration="3000" className="first-logos">
+              <ClientLogos clientName="DadasLechon"/>
+              <ClientLogos clientName="ElordeBoxingGym" />
+              <ClientLogos clientName="HealingGaling" />
+              <ClientLogos clientName="ZWMPH" />
+              <ClientLogos clientName="CommTrend" />
+              <ClientLogos clientName="dTurbanadaTransport" />
+              <ClientLogos clientName="FMGlobal" />
+              <ClientLogos clientName="FordecioPowerDriveCorporation" />
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="3000" className="first-logos">
+              <ClientLogos clientName="GSTS" />
+              <ClientLogos clientName="SinoCargoworks" />
+              <ClientLogos clientName="PUPStaMaria" />
+              <ClientLogos clientName="PNP" />
+              <ClientLogos clientName="Bossh" />
+              <ClientLogos clientName="VerenasCafe" />
+              <ClientLogos clientName="SanJoseAcademy" />
+              <ClientLogos clientName="ProSolutions" />
+            </div>
+            
+            <div data-aos="fade-up" data-aos-duration="3000" className="first-logos">
+              <ClientLogos clientName="Acay" />
+              <ClientLogos clientName="allenmc" />
+              <ClientLogos clientName="anSheng" />
+              <ClientLogos clientName="bioQuick" />
+              <ClientLogos clientName="Catarman" />
+              <ClientLogos clientName="cocacola" />
+              <ClientLogos clientName="DivinaPastora" />
+              <ClientLogos clientName="easternVisayas" />
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" className="first-logos">
+              <ClientLogos clientName="Florentino" />
+              <ClientLogos clientName="LearningInstitute" />
+              <ClientLogos clientName="northernSamar" />
+              <ClientLogos clientName="RamMallari" />
+              <ClientLogos clientName="SerapEngg" />
+              <ClientLogos clientName="takeMeOut" />
+              <ClientLogos clientName="yoloSolution" />
+            </div>
           </div>
         </div>
       </section>
