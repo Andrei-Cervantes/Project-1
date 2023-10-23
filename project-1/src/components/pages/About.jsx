@@ -32,7 +32,7 @@ export const About = () => {
       <section className="about-heading text-center" id="about">
         <div className="container about-hero">
           <div className="row">
-            <div className="col-md-12">
+            <div data-aos="fade-up" data-aos-duration="1000" className="col-md-12">
               <h2 className="about-title">
                 ABOUT PADES PRINTING
               </h2>
