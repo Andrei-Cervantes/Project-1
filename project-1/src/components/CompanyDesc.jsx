@@ -11,13 +11,26 @@ export function CompanyDesc() {
         <Row>
           <Col>
             <Card className="home-company-desc-card">
-              <p className="home-company-desc">
-                PADES Printing will provide you exactly the kind of printing
-                results you have desired. We primarily focus on offering highest
-                quality printing services at reasonable prices. We combine
-                technology with our broad experience to streamline the process
-                so you will never have to settle for anything less.
-              </p>
+              <div>
+                <p className="home-company-desc1">
+                  We know how important designs are when it comes to your branding,
+                  print and layout.
+                </p>
+              </div>
+
+              <div className="home-company-desc2-container">
+                <p className="home-company-desc2">
+                  {" "}
+                  Our printing team are always on hand to get the job done.
+                </p>
+              </div>
+              <div className="home-company-desc3-container">
+                <p className="home-company-desc3">
+                  {" "}
+                  From the design for print to digital design, our team will
+                  work hard to your deadlines, not ours.
+                </p>
+              </div>
             </Card>
           </Col>
         </Row>

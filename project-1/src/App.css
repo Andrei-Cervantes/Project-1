@@ -46,23 +46,46 @@
 }
 
 .home-company-desc-card {
-  padding: 1rem;
-  padding-left: 0;
+  padding: 1rem 1rem;
   margin: 2rem auto;
   border-radius: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
-.home-company-desc {
-  font-family: var(--normal-text);
+.home-company-desc1,
+.home-company-desc2,
+.home-company-desc3 {
   margin: 0;
-  background-color: rgba(18, 18, 18, 0.8);
-  padding: 1rem;
+  font-family: var(--heading);
+  align-content: center;
+  align-items: center;
+}
+
+.home-company-desc1 {
+  font-weight: 700;
+  padding-left: 0;
+  font-size: 20px;
+}
+
+.home-company-desc2-container,
+.home-company-desc3-container {
+  margin-top: -2rem;
+  border-radius: 0 0 8px 8px;
   color: #f5f5f5;
-  border-radius: 0 16px 16px 0;
-  width: auto;
+  background-color: rgba(18, 18, 18, 0.8);
+}
+
+.home-company-desc2,
+.home-company-desc3 {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin-top: 2rem;
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 0.25px;
 }
 
 .home-services {
@@ -240,7 +263,7 @@
 
 .home-product-card-container {
   border-radius: 0;
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   margin-bottom: 1rem;
 }
 
@@ -289,9 +312,26 @@
 
 /* MODE OF PAYMENTS STYLES */
 
+.mop-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.mop-section-h3-container {
+  margin: 1.5rem auto 0.5rem auto;
+}
+
 .mop-section h3 {
   font-family: var(--heading);
+  padding: 1rem 0;
+  margin: 0;
 }
+
+.mop-card {
+  height: 100px;
+  border-radius: 0;
+}
+
 
 /* FOOTER STYLES */
 
@@ -338,7 +378,7 @@
 
 .vector-license-container {
   padding: 0;
-  font-size: 12px; 
+  font-size: 12px;
   margin-top: 0.5rem;
   color: rgb(245, 245, 245, 0.75);
 }
@@ -395,9 +435,6 @@
   background-color: #f5f5f5;
 }
 
-.hide-in-mobile {
-  margin: 0;
-}
 
 /* About Styles */
 
@@ -444,7 +481,7 @@
 }
 
 .first-section {
-  padding-top: 5rem ;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #59d2fe;
 }
@@ -469,7 +506,7 @@
 }
 
 .mv-row {
-  height: 350px
+  height: 350px;
 }
 
 .our-mission {
@@ -485,10 +522,9 @@
 .about-logo {
   width: 50%;
   height: 80%;
-  
 }
 
-.about-logo-container{
+.about-logo-container {
   padding: auto;
   display: flex;
   justify-content: center;
@@ -505,8 +541,8 @@
   padding-top: 3rem;
   padding-bottom: 2rem;
   padding-left: 0%;
-  padding-right:0%;
- 
+  padding-right: 0%;
+
   color: white;
   text-shadow: 2px 2px #121212;
 }
@@ -533,10 +569,9 @@ li {
   position: relative;
 }
 
-.second-section{
+.second-section {
   background-color: #59d2fe;
 }
-
 
 /* SERVICES PAGE STYLES */
 
@@ -651,7 +686,7 @@ li {
 .products-h2row {
   padding-left: 1rem;
   padding-right: 1rem;
-} 
+}
 .products-banner h2 {
   color: white;
   font-family: var(--heading);
@@ -660,7 +695,7 @@ li {
   letter-spacing: 2px;
   letter-spacing: 2px;
   margin: 0;
-  padding: 2rem ;
+  padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 0.5px solid rgb(245, 245, 245, 0.5);
@@ -732,7 +767,7 @@ li {
   font-family: var(--heading);
   width: auto;
   transform: translateX(110%);
-  transition: transform 0.3s ease-in-out ;
+  transition: transform 0.3s ease-in-out;
   transform: translateX(110%);
 }
 
@@ -744,11 +779,9 @@ li {
   transform: scale(1.05);
 }
 
-
 /*  MOBILE RESPONSIVENESS */
 
 @media only screen and (max-width: 600px) {
-
   /* HOME PAGE STYLING - MOBILE */
 
   /* ABOUT PAGE STYLING - MOBILE */
@@ -829,7 +862,18 @@ li {
     width: auto;
     font-size: 14px;
   }
-  #root > div > div.services-page.container > div > div.slick-list > div > div:nth-child(6) > div > div > div > div > div.services-page-card-title.card-title.h5 {
+  #root
+    > div
+    > div.services-page.container
+    > div
+    > div.slick-list
+    > div
+    > div:nth-child(6)
+    > div
+    > div
+    > div
+    > div
+    > div.services-page-card-title.card-title.h5 {
     margin-left: 3.5rem;
   }
   .services-slider {
@@ -878,7 +922,7 @@ li {
   .footer-address h6 {
     margin-bottom: 2px;
   }
-  .footer-address p{
+  .footer-address p {
     margin-bottom: 0;
   }
   .footer-contact {
@@ -923,6 +967,6 @@ li {
     text-align: center;
   }
   .footer-copyright .row:nth-of-type(2) {
-   text-align: center;
+    text-align: center;
   }
 }
