@@ -159,7 +159,7 @@ export const Products = () => {
       <section className="products-banner">
         <Container className="products-content">
           <Row className="products-h2row">
-            <h2>PRODUCTS</h2>
+            <h2 >PRODUCTS</h2>
           </Row>
         </Container>
       </section>

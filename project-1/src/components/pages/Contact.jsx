@@ -5,20 +5,33 @@ import "./Contact.css";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 
 // Icons Imports
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import phone from "./assets/ContactImages/facebook.png";
+import mail from "./assets/ContactImages/mail.png";
+import facebook from "./assets/ContactImages/facebook.png";
 
 // Image Imports
-import main from "./assets/ContactImages/main.jpg";
-import catarman from "./assets/ContactImages/catarman.jpg";
-import borongan from "./assets/ContactImages/borongan.jpg";
-import calbayog from "./assets/ContactImages/calbayog.jpg";
-import tacloban from "./assets/ContactImages/tacloban.jpg";
-import maincampus from "./assets/ContactImages/maincampus.jpg";
+import mainfront from "./assets/ContactImages/main-front.jpg";
+import maininside from "./assets/ContactImages/main-inside.jpg";
+import mainmap from "./assets/ContactImages/main-map.jpg";
+import catarmanfront from "./assets/ContactImages/catarman-front.jpg";
+import catarmaninside from "./assets/ContactImages/catarman-inside.jpg";
+// import catarmanmap from "./assets/ContactImages/catarman-map.jpg";
+import boronganfront from "./assets/ContactImages/borongan-front.jpg";
+import boronganinside from "./assets/ContactImages/borongan-inside.jpg";
+import boronganmap from "./assets/ContactImages/borongan-map.jpg";
+import calbayogfront from "./assets/ContactImages/calbayog-front.jpg";
+import calbayoginside from "./assets/ContactImages/calbayog-inside.jpg";
+import calbayogmap from "./assets/ContactImages/calbayog-map.jpg";
+import taclobanfront from "./assets/ContactImages/tacloban-front.jpg";
+import taclobaninside from "./assets/ContactImages/tacloban-inside.jpg";
+// import taclobanmap from "./assets/ContactImages/tacloban-map.jpg";
+
 
 export const Contact = () => {
   const [index, setIndex] = useState(0);
@@ -39,9 +52,15 @@ export const Contact = () => {
       <section>
         <div className="contact-container">
           <div className="contact-details">
-            <h3 data-aos="zoom-in-down" data-aos-duration="1000" className="contact-title">OUR CONTACT DETAILS:</h3>
+            <h3 className="contact-title">
+              OUR CONTACT DETAILS:
+            </h3>
             <div className="contact-info">
-              <div data-aos="zoom-in-right" data-aos-duration="2000" className="contact">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-duration="2000"
+                className="contact"
+              >
                 <a
                   className="contact-link"
                   href="https://www.facebook.com/PADESprintingServices"
@@ -51,13 +70,21 @@ export const Contact = () => {
                   PADES Printing Services
                 </a>
               </div>
-              <div data-aos="zoom-in-up" data-aos-duration="2000" className="contact">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-duration="2000"
+                className="contact"
+              >
                 <a className="contact-link" href="tel:+(02)8.659-4131">
                   <BsFillTelephoneFill className="contact-icon" />
                   (02)8.659-4131
                 </a>
               </div>
-              <div data-aos="zoom-in-up" data-aos-duration="2000" className="contact">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="2000"
+                className="contact"
+              >
                 <a
                   className="contact-link"
                   href="mailto:enquiries@padesprinting.com.ph"
@@ -66,7 +93,11 @@ export const Contact = () => {
                   enquiries@padesprinting.com.ph
                 </a>
               </div>
-              <div data-aos="zoom-in-left" data-aos-duration="2000" className="contact">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-duration="2000"
+                className="contact"
+              >
                 <a
                   className="contact-link"
                   href="mailto:padesprinting@yahoo.com"
@@ -78,11 +109,11 @@ export const Contact = () => {
             </div>
           </div>
           <div className="contact-locations">
-            <h3 data-aos="zoom-in-down" data-aos-duration="3000" className="text-center">COME VISIT US:</h3>
+            <h3 className="text-center">COME VISIT US:</h3>
             <div className="locations-container">
               <Carousel
-                data-aos="flip-up"
-                data-aos-duration="3000"
+                data-aos="fade-up"
+                data-aos-duration="2000"
                 activeIndex={index}
                 onSelect={handleSelect}
                 className="locations-carousel"
@@ -92,31 +123,104 @@ export const Contact = () => {
               >
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={maincampus} classname="location-images"></img>
+                    <img src={mainmap} classname="location-images"></img>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={catarman} classname="location-images"></img>
+                    <img src={catarmanfront} classname="location-images"></img>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={borongan} classname="location-images"></img>
+                    <img src={boronganmap} classname="location-images"></img>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={calbayog} classname="location-images"></img>
+                    <img src={calbayogmap} classname="location-images"></img>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={tacloban} classname="location-images"></img>
+                    <img src={taclobanfront} classname="location-images"></img>
                   </div>
                 </Carousel.Item>
               </Carousel>
-              <br />
+              <Carousel
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                activeIndex={index}
+                onSelect={handleSelect}
+                className="locations-carousel"
+                interval={null}
+                controls={false}
+                indicators={false}
+              >
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={mainfront} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={catarmanfront} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={boronganfront} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={calbayogfront} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={taclobanfront} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              <Carousel
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                activeIndex={index}
+                onSelect={handleSelect}
+                className="locations-carousel"
+                interval={null}
+                controls={false}
+                indicators={false}
+              >
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={maininside} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={catarmaninside} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={boronganinside} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={calbayoginside} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={taclobaninside} classname="location-images"></img>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+            <div className="title-container">
               <Carousel
                 data-aos="flip-down"
                 data-aos-duration="3000"

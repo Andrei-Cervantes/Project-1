@@ -32,7 +32,7 @@ export const About = () => {
       <section className="about-heading text-center" id="about">
         <div className="container about-hero">
           <div className="row">
-            <div data-aos="fade-up" data-aos-duration="1000" className="col-md-12">
+            <div className="col-md-12">
               <h2 className="about-title">
                 ABOUT PADES PRINTING
               </h2>
@@ -42,9 +42,9 @@ export const About = () => {
       </section>
       <section className="first-section">
         <div className="container">
-          <div data-aos="fade-up" data-aos-duration="2000"className="about-des text-center">
+          <div className="about-des text-center">
             <h3 className="about-subtitle text-center">COMPANY PROFILE</h3>
-            <div className="about-description text-start">
+            <div data-aos="fade-up" data-aos-duration="2000" className="about-description text-start">
               <p>{message1}</p>
               <p>{message2}</p>
               <p>{message3}</p>
