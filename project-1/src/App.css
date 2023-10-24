@@ -973,11 +973,11 @@ li {
     top: 5%;
   }
 
-  .container .slider {
-    width: 1600%;
-  }
   .featured-clients h3 {
     font-size: 24px;
+  }
+  .container .slider {
+    width: 1580%;
   }
 
   /* ABOUT PAGE STYLING - MOBILE */
@@ -1172,3 +1172,4 @@ li {
     padding-left: 4px;
   }
 }
+
