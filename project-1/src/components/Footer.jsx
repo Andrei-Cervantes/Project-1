@@ -123,12 +123,15 @@ export function Footer() {
         <Row>
           <Col className="vector-license-container">
             <span className="vector-license">
-              <a href="https://storyset.com/work" target="_blank">
+              <a href="https://storyset.com/work" target="_blank" rel="noreferrer">
                 Work illustrations by Storyset
               </a>
             </span>
             <span className="vector-license">
-            <a href="https://www.freepik.com/free-photo/abstract-paint-splashing-vibrant-colors-liquid-motion-generated-by-ai_41358549.htm#query=cmyk&position=15&from_view=search&track=sph" target="_blank">Image by vecstock</a> on Freepik
+            <a href="https://www.freepik.com/free-photo/abstract-paint-splashing-vibrant-colors-liquid-motion-generated-by-ai_41358549.htm#query=cmyk&position=15&from_view=search&track=sph" target="_blank" rel="noreferrer">Image by vecstock</a> on Freepik
+            </span>
+            <span className="vector-license">
+            Icons by <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
             </span>
           </Col>
           <Col xs={6}></Col>

@@ -8,12 +8,12 @@ export function OurProducts() {
     <div className="home-products-section">
       <Container>
         <Row>
-          <Col xs={6}>
+          <Col xs={7}>
             <Card className="services-card our-services">
               <h3>Our Products</h3>
             </Card>
           </Col>
-          <Col>
+          <Col xs={5}>
             <Card className="services-card more-services">
               <div className="view-more">
                 <a className="view-more-text" href="/products">
@@ -27,16 +27,16 @@ export function OurProducts() {
           </Col>
         </Row>
         <Row>
-          <Col xs={5}>
+          <Col xs={12} lg={4}>
             <Card className="home-product-card kuyaJ"></Card>
           </Col>
-          <Col>
+          <Col xs={6} lg={2}>
             <Card className="home-product-card book"></Card>
           </Col>
-          <Col>
+          <Col xs={6} lg={2}>
             <Card className="home-product-card calendar"></Card>
           </Col>
-          <Col>
+          <Col xs={12} lg={4}>
             <Card className="home-product-card poster"></Card>
           </Col>
         </Row>

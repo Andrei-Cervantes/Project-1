@@ -16,12 +16,12 @@ export function HomeHero() {
     <div className="homehero">
       <Container className="home-services">
         <Row>
-          <Col>
+          <Col xs={7} lg={6} id="our-services-col">
             <Card className="services-card our-services">
               <h3>Our Services</h3>
             </Card>
           </Col>
-          <Col>
+          <Col xs={5} lg={6} >
             <Card className="services-card more-services">
               <div className="view-more">
                 <a className="view-more-text" href="/services">
@@ -35,7 +35,7 @@ export function HomeHero() {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xs={12} lg={6} >
             <Card className="services-card">
               <div className="icon-container">
                 <img src={graphicdesign} className="service-icon" alt="" />
@@ -46,7 +46,7 @@ export function HomeHero() {
               </div>
             </Card>
           </Col>
-          <Col>
+          <Col xs={12} lg={6} >
             <Card className="services-card">
               <div className="icon-container">
                 <img src={layouting} className="service-icon" alt="" />
@@ -59,7 +59,7 @@ export function HomeHero() {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xs={12} lg={6} >
             <Card className="services-card">
               <div className="icon-container">
                 <img src={customize} className="service-icon" alt="" />
@@ -70,7 +70,7 @@ export function HomeHero() {
               </div>
             </Card>
           </Col>
-          <Col>
+          <Col xs={12} lg={6} >
             <Card className="services-card">
               <div className="icon-container">
                 <img src={largeformat} className="service-icon" alt="" />
@@ -83,7 +83,7 @@ export function HomeHero() {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xs={12} lg={6} >
             <Card className="services-card">
               <div className="icon-container">
                 <img src={desktop} className="service-icon" alt="" />
@@ -94,7 +94,7 @@ export function HomeHero() {
               </div>
             </Card>
           </Col>
-          <Col>
+          <Col xs={12} lg={6} >
             <Card className="services-card">
               <div className="icon-container">
                 <img src={offset} className="service-icon" alt="" />
