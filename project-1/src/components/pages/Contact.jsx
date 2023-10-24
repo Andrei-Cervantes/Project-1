@@ -32,7 +32,7 @@ export const Contact = () => {
       <section className="contact-banner">
         <Container className="contact-content">
           <Row>
-            <h2>GET IN TOUCH WITH US!</h2>
+            <h2 >GET IN TOUCH WITH US!</h2>
           </Row>
         </Container>
       </section>
@@ -78,7 +78,7 @@ export const Contact = () => {
             </div>
           </div>
           <div className="contact-locations">
-            <h3 data-aos="zoom-in-down" data-aos-duration="3000" className="text-center">COME VISIT US:</h3>
+            <h3  className="text-center">COME VISIT US:</h3>
             <div className="locations-container">
               <Carousel
                 data-aos="flip-up"
