@@ -18,6 +18,25 @@ import book5 from "./assets/ProductImages/book5.png";
 import book6 from "./assets/ProductImages/book6.png";
 import calendar1 from "./assets/ProductImages/calendar1.png";
 import calendar2 from "./assets/ProductImages/calendar2.png";
+import calendar3 from "./assets/ProductImages/calendar3.png";
+import paper1 from "./assets/ProductImages/paper1.png";
+import paper2 from "./assets/ProductImages/paper2.png";
+import shirt1 from "./assets/ProductImages/shirt1.png";
+import shirt2 from "./assets/ProductImages/shirt2.png";
+import pullup2 from "./assets/ProductImages/pullup2.png";
+import pullup3 from "./assets/ProductImages/pullup3.png";
+import pullup4 from "./assets/ProductImages/pullup4.png";
+import bbook2 from "./assets/ProductImages/bbook2.png";
+import bbook3 from "./assets/ProductImages/bbook3.png";
+import bcard1 from "./assets/ProductImages/bcard1.png";
+import bcard2 from "./assets/ProductImages/bcard2.png";
+import brochure1 from "./assets/ProductImages/brochure1.png";
+import brochure2 from "./assets/ProductImages/brochure2.png";
+import tarp1 from "./assets/ProductImages/tarp1.png";
+import campaign1 from "./assets/ProductImages/campaign1.png";
+import campaign2 from "./assets/ProductImages/campaign2.png";
+
+
 import FeaturedProductsCard from "../FeaturedProductsCard";
 
 import p1 from "./assets/ProductImages/p1.png";
@@ -37,10 +56,18 @@ import p14 from "./assets/ProductImages/p14.png";
 import p15 from "./assets/ProductImages/p15.png";
 import p16 from "./assets/ProductImages/p16.png";
 
+const paperImages = [paper1, paper2];
 const fordecioImages = [fordecio1, fordecio2];
 const bannerImages = [banner1, banner2];
 const bookImages = [book1, book2, book3, book4, book5, book6];
-const calendarImages = [calendar1, calendar2];
+const calendarImages = [calendar1, calendar2, calendar3];
+const shirtImages = [shirt1, shirt2];
+const pullupImages = [pullup2, pullup3, pullup4];
+const bbookImages = [bbook2, bbook3];
+const bcardImages = [bcard2, bcard1];
+const brochureImages = [brochure1, brochure2]
+const tarpImages = [tarp1, campaign1, campaign2]
+
 
 export const Products = () => {
   const [hoveredCard1, setHoveredCard1] = useState(false);
@@ -170,6 +197,47 @@ export const Products = () => {
               </Card>
             </Col>
           </Row>
+          <Row className="fprow1">
+            <Col xs={6}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={paperImages} />
+              </Card>
+            </Col>
+            <Col xs={6}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={shirtImages} />
+              </Card>
+            </Col>
+          </Row>
+          <Row className="fprow2">
+            <Col xs={4}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={pullupImages} />
+              </Card>
+            </Col>
+            <Col xs={4}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={bbookImages} />
+              </Card>
+            </Col>
+            <Col xs={4}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={bcardImages} />
+              </Card>
+            </Col>
+          </Row>
+          <Row className="fprow2">
+            <Col xs={8}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={brochureImages} />
+              </Card>
+            </Col>
+            <Col xs={4}>
+              <Card className="product-card">
+                <FeaturedProductsCard imageSources={tarpImages} />
+              </Card>
+            </Col>
+          </Row>
         </Container>
       </section>
       <section className="ap-section">
@@ -230,7 +298,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard4}>
+                onMouseEnter={toggleHoverCard4}
+              >
                 <Card.Img src={p4} />
                 <div>
                   <p className="aproduct-name">Customized Umbrellas</p>
@@ -247,7 +316,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard5}>
+                onMouseEnter={toggleHoverCard5}
+              >
                 <Card.Img src={p5} />
                 <div>
                   <p className="aproduct-name">Customized Mugs</p>
@@ -261,7 +331,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard6}>
+                onMouseEnter={toggleHoverCard6}
+              >
                 <Card.Img src={p6} />
                 <div>
                   <p className="aproduct-name">Pull-up Banners</p>
@@ -275,7 +346,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard7}>
+                onMouseEnter={toggleHoverCard7}
+              >
                 <Card.Img src={p7} />
                 <div>
                   <p className="aproduct-name">Safety Long Sleeve Shirts</p>
@@ -289,7 +361,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard8}>
+                onMouseEnter={toggleHoverCard8}
+              >
                 <Card.Img src={p8} />
                 <div>
                   <p className="aproduct-name">Customized Tumblers</p>
@@ -306,7 +379,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard9}>
+                onMouseEnter={toggleHoverCard9}
+              >
                 <Card.Img src={p9} />
                 <div>
                   <p className="aproduct-name">ID Cards & Lanyards</p>
@@ -320,7 +394,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard10}>
+                onMouseEnter={toggleHoverCard10}
+              >
                 <Card.Img src={p10} />
                 <div>
                   <p className="aproduct-name">Customized Tote Bags</p>
@@ -334,7 +409,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard11}>
+                onMouseEnter={toggleHoverCard11}
+              >
                 <Card.Img src={p11} />
                 <div>
                   <p className="aproduct-name">Business Forms</p>
@@ -348,7 +424,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard12}>
+                onMouseEnter={toggleHoverCard12}
+              >
                 <Card.Img src={p12} />
                 <div>
                   <p className="aproduct-name">Notebooks</p>
@@ -365,7 +442,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard13}>
+                onMouseEnter={toggleHoverCard13}
+              >
                 <Card.Img src={p13} />
                 <div>
                   <p className="aproduct-name">Headwear Caps</p>
@@ -379,7 +457,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard14}>
+                onMouseEnter={toggleHoverCard14}
+              >
                 <Card.Img src={p14} />
                 <div>
                   <p className="aproduct-name">Spiral Notepads</p>
@@ -393,7 +472,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard15}>
+                onMouseEnter={toggleHoverCard15}
+              >
                 <Card.Img src={p15} />
                 <div>
                   <p className="aproduct-name">Commercial Prints</p>
@@ -407,7 +487,8 @@ export const Products = () => {
                     ? "aproject-card-hover aproject-card"
                     : "aproject-card"
                 }
-                onMouseEnter={toggleHoverCard16}>
+                onMouseEnter={toggleHoverCard16}
+              >
                 <Card.Img src={p16} />
                 <div>
                   <p className="aproduct-name">Book Binds</p>

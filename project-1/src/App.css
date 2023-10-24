@@ -278,7 +278,7 @@
 
 .home-product-card.kuyaJ {
   height: 275px;
-  background-image: url(./components/pages/assets/ProductImages/bbook1.jpg);
+  background-image: url(./components/pages/assets/ProductImages/bbook1.png);
   background-size: contain;
   background-position: center;
   border-radius: 0;
@@ -299,7 +299,7 @@
 
 .home-product-card.calendar {
   height: 275px;
-  background-image: url(./components/pages/assets/ProductImages/pullup4.jpg);
+  background-image: url(./components/pages/assets/ProductImages/pullup4.png);
   background-size: cover;
   background-position: center;
   border-radius: 0;
@@ -1025,6 +1025,10 @@ li {
   }
   .aproject-card p {
     font-size: 14px;
+  }
+
+  #root > div > section.fp-section > div > div:nth-child(6) > div.col-8 {
+    padding: 0;
   }
 
   /* SERVICES PAGE STYLING - MOBILE */
