@@ -574,7 +574,7 @@
 
 .mission-vision {
   padding-top: 3rem;
-  background-image: linear-gradient(#59d2fe 0%, #121212 50%);
+  background-color: #59d2fe;
   padding-bottom: 3rem;
 }
 
@@ -593,8 +593,9 @@
 }
 
 .about-logo {
-  width: 50%;
-  height: 80%;
+  width: 200px;
+  height: 200px;
+
 }
 
 .about-logo-container {
@@ -611,21 +612,19 @@
 
 .our-mission {
   font-family: var(--normal-text);
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0%;
   padding-right: 0%;
 
-  color: white;
-  text-shadow: 2px 2px #121212;
+  color: black;
 }
 
 .our-vision {
   font-family: var(--normal-text);
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: white;
-  text-shadow: 2px 2px #121212;
+  color: black;
 }
 
 .about h2,
@@ -643,7 +642,8 @@ li {
 }
 
 .second-section {
-  background-color: #59d2fe;
+  background-image: linear-gradient(#59d2fe 0%, #121212 50%);
+  
 }
 
 .first-logos {
