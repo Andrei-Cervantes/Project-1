@@ -16,21 +16,21 @@ import mail from "./assets/ContactImages/mail.png";
 import facebook from "./assets/ContactImages/facebook.png";
 
 // Image Imports
-import mainfront from "./assets/ContactImages/main-front.jpg";
-import maininside from "./assets/ContactImages/main-inside.jpg";
+import mainfront from "./assets/ContactImages/main-front.png";
+import maininside from "./assets/ContactImages/main-inside.png";
 import mainmap from "./assets/ContactImages/main-map.jpg";
-import catarmanfront from "./assets/ContactImages/catarman-front.jpg";
+import catarmanfront from "./assets/ContactImages/catarman-front.png";
 import catarmaninside from "./assets/ContactImages/catarman-inside.jpg";
-// import catarmanmap from "./assets/ContactImages/catarman-map.jpg";
+import catarmanmap from "./assets/ContactImages/catarman-map.jpg";
 import boronganfront from "./assets/ContactImages/borongan-front.jpg";
 import boronganinside from "./assets/ContactImages/borongan-inside.jpg";
 import boronganmap from "./assets/ContactImages/borongan-map.jpg";
 import calbayogfront from "./assets/ContactImages/calbayog-front.jpg";
 import calbayoginside from "./assets/ContactImages/calbayog-inside.jpg";
 import calbayogmap from "./assets/ContactImages/calbayog-map.jpg";
-import taclobanfront from "./assets/ContactImages/tacloban-front.jpg";
+import taclobanfront from "./assets/ContactImages/tacloban-front.png";
 import taclobaninside from "./assets/ContactImages/tacloban-inside.jpg";
-// import taclobanmap from "./assets/ContactImages/tacloban-map.jpg";
+import taclobanmap from "./assets/ContactImages/tacloban-map.jpg";
 
 
 export const Contact = () => {
@@ -113,7 +113,7 @@ export const Contact = () => {
 
           <div className="contact-locations">
             <h3 className="text-center">COME VISIT US:</h3>
-            <div className="locations-container">
+            <div className="locations-container" id="main">
               <h4>Lot 19-B, Block 215, Dollar St. Phase 8, North Fairvew, Quezon City</h4>
               <Carousel
                 data-aos="fade-up"
@@ -133,7 +133,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={catarmanfront} classname="location-images"></img>
+                    <img src={mainfront} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Front</h5>
@@ -141,7 +141,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={boronganmap} classname="location-images"></img>
+                    <img src={maininside} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Inside</h5>
@@ -161,7 +161,7 @@ export const Contact = () => {
               >
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={mainmap} classname="location-images"></img>
+                    <img src={boronganmap} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Map</h5>
@@ -169,7 +169,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={catarmanfront} classname="location-images"></img>
+                    <img src={boronganfront} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Front</h5>
@@ -177,7 +177,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={boronganmap} classname="location-images"></img>
+                    <img src={boronganinside} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Inside</h5>
@@ -197,7 +197,7 @@ export const Contact = () => {
               >
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={mainmap} classname="location-images"></img>
+                    <img src={calbayogmap} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Map</h5>
@@ -205,7 +205,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={catarmanfront} classname="location-images"></img>
+                    <img src={calbayogfront} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Front</h5>
@@ -213,7 +213,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={boronganmap} classname="location-images"></img>
+                    <img src={calbayoginside} catarmanlassname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Inside</h5>
@@ -233,7 +233,7 @@ export const Contact = () => {
               >
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={mainmap} classname="location-images"></img>
+                    <img src={catarmanmap} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Map</h5>
@@ -249,7 +249,7 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={boronganmap} classname="location-images"></img>
+                    <img src={catarmaninside} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Inside</h5>
@@ -269,7 +269,7 @@ export const Contact = () => {
               >
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={mainmap} classname="location-images"></img>
+                    <img src={taclobanmap} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Map</h5>
@@ -277,15 +277,15 @@ export const Contact = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={catarmanfront} classname="location-images"></img>
+                    <img src={taclobanfront} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Front</h5>
-                  </Carousel.Caption>Map
+                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <div className="text-center">
-                    <img src={boronganmap} classname="location-images"></img>
+                    <img src={taclobaninside} classname="location-images"></img>
                   </div>
                   <Carousel.Caption>
                     <h5>Inside</h5>
