@@ -236,7 +236,7 @@
 .container .slider {
   animation: slidein 90s linear infinite;
   white-space: nowrap;
-  width: 515%;
+  width: 514%;
 }
 
 .container .slider .logos {
