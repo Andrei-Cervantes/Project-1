@@ -2,6 +2,7 @@ import React from "react";
 import missionLogo from "./assets/AboutImages/mission.png";
 import visionLogo from "./assets/AboutImages/vision.png";
 import { ClientLogos } from "../ClientLogos";
+import {Row, Col} from "react-bootstrap";
 
 export const About = () => {
   let message1 =
@@ -55,12 +56,48 @@ export const About = () => {
           </div>
         </div>
       </section>
+      <section className="mission-vision">
+        <div className="container">
+          <Row>
+            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }} className="our-mission">
+              <h2 className="mission-title text-center">OUR MISSION</h2>
+              <div data-aos="fade-right" data-aos-duration="2000">
+                <ul>
+                  <li className="mission-message">{missionmessage1}</li>
+                  <li className="mission-message">{missionmessage2}</li>
+                  <li className="mission-message">{missionmessage3}</li>
+                  <li className="mission-message">{missionmessage4}</li>
+                  <li className="mission-message">{missionmessage5}</li>
+                  <li className="mission-message">{missionmessage6}</li>
+                </ul>
+              </div>
+            </Col>
+            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} data-aos="flip-left" data-aos-duration="1500" className="about-logo-container container" >
+              <img  className="about-logo" src={missionLogo} alt=""></img>
+            </Col>
+          </Row>
+          <Row lg={6} xs={12} className="row my-row">
+            <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 1 }}data-aos="flip-right" data-aos-duration="1500" className=" about-logo-container ">
+                <img className="about-logo" src={visionLogo} alt=""></img>
+            </Col>
+            <Col xs={{ span: 12, order: 2 }} lg={{ span: 6, order: 2 }} className="our-vision">
+              <div >
+                <h2 className="vision-title text-center">OUR VISION</h2>
+              </div>
+              <div data-aos="fade-left" data-aos-duration="2000">
+                <p className="vision-message">{visionmessage1}</p>
+                <p className="vision-message">{visionmessage2}</p>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </section>
       <section className="second-section">
         <div className="container">
-          <h3 data-aos="fade-up" data-aos-duration="3000" className="about-subtitle text-center">OUR CLIENTS</h3>
+          <h3  className="about-subtitle text-center">OUR CLIENTS</h3>
           <div className="container">
 
-            <div data-aos="fade-up" data-aos-duration="3000" className="first-logos">
+            <div data-aos="fade-up" data-aos-duration="2000" className="first-logos">
               <ClientLogos clientName="DadasLechon"/>
               <ClientLogos clientName="ElordeBoxingGym" />
               <ClientLogos clientName="HealingGaling" />
@@ -71,7 +108,7 @@ export const About = () => {
               <ClientLogos clientName="FordecioPowerDriveCorporation" />
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="3000" className="first-logos">
+            <div data-aos="fade-up" data-aos-duration="2000" className="first-logos">
               <ClientLogos clientName="GSTS" />
               <ClientLogos clientName="SinoCargoworks" />
               <ClientLogos clientName="PUPStaMaria" />
@@ -82,7 +119,7 @@ export const About = () => {
               <ClientLogos clientName="ProSolutions" />
             </div>
             
-            <div data-aos="fade-up" data-aos-duration="3000" className="first-logos">
+            <div data-aos="fade-up" data-aos-duration="2000" className="first-logos">
               <ClientLogos clientName="Acay" />
               <ClientLogos clientName="allenmc" />
               <ClientLogos clientName="anSheng" />
@@ -101,42 +138,6 @@ export const About = () => {
               <ClientLogos clientName="SerapEngg" />
               <ClientLogos clientName="takeMeOut" />
               <ClientLogos clientName="yoloSolution" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="mission-vision">
-        <div className="container">
-          <div className="row mv-row">
-            <div className="our-mission col-md-6">
-              <h2 data-aos="fade-left" data-aos-duration="2000" className="mission-title text-center">OUR MISSION</h2>
-              <div data-aos="fade-right" data-aos-duration="2000">
-                <ul>
-                  <li className="mission-message">{missionmessage1}</li>
-                  <li className="mission-message">{missionmessage2}</li>
-                  <li className="mission-message">{missionmessage3}</li>
-                  <li className="mission-message">{missionmessage4}</li>
-                  <li className="mission-message">{missionmessage5}</li>
-                  <li className="mission-message">{missionmessage6}</li>
-                </ul>
-              </div>
-            </div>
-            <div data-aos="flip-left" data-aos-duration="1500" className="about-logo-container container col-md-6 ">
-              <img className="about-logo" src={missionLogo} alt=""></img>
-            </div>
-          </div>
-          <div className="row my-row">
-            <div data-aos="flip-right" data-aos-duration="1500" className=" about-logo-container container col-md-6 ">
-                <img className="about-logo" src={visionLogo} alt=""></img>
-            </div>
-            <div  className="our-vision col-md-6">
-              <div data-aos="fade-right" data-aos-duration="2000">
-                <h2 className="vision-title text-center">OUR VISION</h2>
-              </div>
-              <div  data-aos="fade-left" data-aos-duration="2000">
-                <p className="vision-message">{visionmessage1}</p>
-                <p className="vision-message">{visionmessage2}</p>
-              </div>
             </div>
           </div>
         </div>
