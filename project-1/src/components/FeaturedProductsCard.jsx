@@ -10,7 +10,7 @@ function FeaturedProductsCard({ imageSources, width, height }) {
     if (isHovered) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSources.length);
-      }, 2000); // Change image every 2 seconds (adjust as needed)
+      }, 1250); // Change image every 2 seconds (adjust as needed)
     } else {
       clearInterval(interval);
     }

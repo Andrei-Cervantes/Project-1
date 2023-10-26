@@ -236,7 +236,7 @@
 .container .slider {
   animation: slidein 90s linear infinite;
   white-space: nowrap;
-  width: 379%;
+  width: 515%;
 }
 
 .container .slider .logos {
@@ -595,7 +595,6 @@
 .about-logo {
   width: 200px;
   height: 200px;
-
 }
 
 .about-logo-container {
@@ -643,7 +642,6 @@ li {
 
 .second-section {
   background-image: linear-gradient(#59d2fe 0%, #121212 50%);
-  
 }
 
 .first-logos {
@@ -686,7 +684,11 @@ li {
   position: relative;
   text-shadow: 1px 1px #f5f5f5;
   text-align: left;
-  padding: 1rem 80px;
+  padding: 1rem 2rem;
+}
+
+.bir-number {
+  letter-spacing: 1px;
 }
 
 .services-title {
@@ -945,7 +947,7 @@ li {
   .mop-card {
     margin-bottom: 0.5rem;
   }
-  
+
   #mop-card-cash {
     padding-right: 0.25rem;
   }
@@ -953,7 +955,7 @@ li {
     padding-left: 0.25rem;
   }
   .mop-icon {
-    height:75px;
+    height: 75px;
     width: 75px;
     left: 10%;
   }
@@ -977,7 +979,7 @@ li {
     font-size: 24px;
   }
   .container .slider {
-    width: 1580%;
+    width: 2133%;
   }
 
   /* ABOUT PAGE STYLING - MOBILE */
@@ -1052,6 +1054,10 @@ li {
     margin: 0;
     padding-bottom: 1rem;
     text-align: justify;
+  }
+  .bir-number {
+    letter-spacing: 0;
+    font-size: 20px;
   }
   .services-page-card-container {
     padding: 0.5rem;
@@ -1176,4 +1182,3 @@ li {
     padding-left: 4px;
   }
 }
-

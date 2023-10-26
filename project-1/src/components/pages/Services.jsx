@@ -87,6 +87,11 @@ export const Services = () => {
             design, our team will work hard to your deadlines, not ours.
           </p>
         </Row>
+        <Row className="bir-number-container">
+          <h3 className="bir-number text-center">
+            <strong>BIR ACCREDITATION NO. 028MP2019000000034</strong>
+          </h3>
+        </Row>
         <Slider {...settings} className="services-slider">
           <div>
             <Col className="services-page-card-container">
