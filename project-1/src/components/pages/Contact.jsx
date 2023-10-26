@@ -45,7 +45,7 @@ export const Contact = () => {
       <section className="contact-banner">
         <Container className="contact-content">
           <Row>
-            <h2>GET IN TOUCH WITH US!</h2>
+            <h2>CONTACTS</h2>
           </Row>
         </Container>
       </section>
@@ -113,149 +113,153 @@ export const Contact = () => {
 
           <div className="contact-locations">
             <h3 className="text-center">COME VISIT US:</h3>
-            <div className="locations-container" id="main">
-              <h4>Lot 19-B, Block 215, Dollar St. Phase 8, North Fairvew, Quezon City</h4>
-              <Carousel
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                activeIndex={index}
-                onSelect={handleSelect}
-                className="locations-carousel"
-                interval={5000}
-              >
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={mainmap} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Map</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={mainfront} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Front</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={maininside} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Inside</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
+            <div className="column-container">
+              <div className="locations-container" id="main">
+                <h4>Lot 19-B, Block 215, Dollar St. Phase 8, North Fairvew, Quezon City</h4>
+                <Carousel
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  activeIndex={index}
+                  onSelect={handleSelect}
+                  className="locations-carousel"
+                  interval={5000}
+                >
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={mainmap} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Map</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={mainfront} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Front</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={maininside} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Inside</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+              <div className="locations-container" id="borongan">
+                <h4>Purok Central, Brgy. Alang - Alang, Borongan City, Eastern Samar</h4>
+                <Carousel
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  activeIndex={index}
+                  onSelect={handleSelect}
+                  className="locations-carousel"
+                  interval={5000}
+                >
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={boronganmap} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Map</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={boronganfront} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Front</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={boronganinside} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Inside</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
             </div>
-            <div className="locations-container" id="borongan">
-              <h4>Purok Central, Brgy. Alang - Alang, Borongan City, Eastern Samar</h4>
-              <Carousel
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                activeIndex={index}
-                onSelect={handleSelect}
-                className="locations-carousel"
-                interval={5000}
-              >
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={boronganmap} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Map</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={boronganfront} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Front</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={boronganinside} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Inside</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </div>
-            <div className="locations-container" id="calbayog">
-              <h4>P-4 Greenlande, Brgy. Rawis, Calbayog City, Western Samar</h4>
-              <Carousel
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                activeIndex={index}
-                onSelect={handleSelect}
-                className="locations-carousel"
-                interval={5000}
-              >
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={calbayogmap} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Map</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={calbayogfront} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Front</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={calbayoginside} catarmanlassname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Inside</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </div>
-            <div className="locations-container" id="catarman">
-              <h4>Purok 1, Brgy. Dalakit, Catarman N. Samar</h4>
-              <Carousel
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                activeIndex={index}
-                onSelect={handleSelect}
-                className="locations-carousel"
-                interval={5000}
-              >
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={catarmanmap} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Map</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={catarmanfront} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Front</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="text-center">
-                    <img src={catarmaninside} classname="location-images"></img>
-                  </div>
-                  <Carousel.Caption>
-                    <h5>Inside</h5>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
+            <div className="column-container">
+              <div className="locations-container" id="calbayog">
+                <h4>P-4 Greenlande, Brgy. Rawis, Calbayog City, Western Samar</h4>
+                <Carousel
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  activeIndex={index}
+                  onSelect={handleSelect}
+                  className="locations-carousel"
+                  interval={5000}
+                >
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={calbayogmap} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Map</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={calbayogfront} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Front</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={calbayoginside} catarmanlassname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Inside</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+              <div className="locations-container" id="catarman">
+                <h4>Purok 1, Brgy. Dalakit, Catarman N. Samar</h4>
+                <Carousel
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  activeIndex={index}
+                  onSelect={handleSelect}
+                  className="locations-carousel"
+                  interval={5000}
+                >
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={catarmanmap} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Map</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={catarmanfront} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Front</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="text-center">
+                      <img src={catarmaninside} classname="location-images"></img>
+                    </div>
+                    <Carousel.Caption>
+                      <h5>Inside</h5>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
             </div>
             <div className="locations-container" id="tacloban">
               <h4>Brgy. 91, Abucay, Tacloban City, Leyte</h4>
