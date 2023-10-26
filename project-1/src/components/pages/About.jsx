@@ -138,7 +138,23 @@ export const About = () => {
               <ClientLogos clientName="SerapEngg" />
               <ClientLogos clientName="takeMeOut" />
               <ClientLogos clientName="yoloSolution" />
+              <ClientLogos clientName="cantoCrestitaBar" />
             </div>
+            <div data-aos="fade-up" data-aos-duration="2000" className="first-logos">
+              <ClientLogos clientName="immaculateConception" />
+              <ClientLogos clientName="kasanggayahanTrading" />
+              <ClientLogos clientName="parkngo" />
+              <ClientLogos clientName="pcTools" />
+              <ClientLogos clientName="bioQuick" />
+              <ClientLogos clientName="redCross" />
+              <ClientLogos clientName="panjojoban" />
+              <ClientLogos clientName="s2" />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" className="first-logos">
+              <ClientLogos clientName="coolMotors" />
+              <ClientLogos clientName="samar" />
+              <ClientLogos clientName="tataBubbleTea" />
+            </div>        
           </div>
         </div>
       </section>
