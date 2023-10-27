@@ -22,7 +22,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "gray",
+        background: "#121212",
         borderRadius: "1rem",
       }}
       onClick={onClick}
@@ -38,7 +38,7 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "gray",
+        background: "#121212",
         borderRadius: "1rem",
       }}
       onClick={onClick}
@@ -74,101 +74,119 @@ export const Services = () => {
       <section className="services-banner">
         <Container className="services-content">
           <Row className="services-h2row">
-            <h2  >SERVICES</h2>
+            <h2>SERVICES</h2>
           </Row>
         </Container>
       </section>
-      <Container className="services-page">
-        <Row className="services-subtitle">
-          <p>
-            At PADES Printing, we know how important designs when it comes to
-            your branding, print and layout. So our printing team are always on
-            hand to get the job done. From the design for print to digital
-            design, our team will work hard to your deadlines, not ours.
-          </p>
-        </Row>
-        <Row className="bir-number-container">
-          <h3 className="bir-number text-center">
-            <strong>BIR ACCREDITATION NO. 028MP2019000000034</strong>
-          </h3>
-        </Row>
-        <Slider {...settings} className="services-slider">
-          <div>
-            <Col className="services-page-card-container">
-              <Card className="gdcard services-page-card ">
-                <Card.Img className="gdcard-bg" variant="top" src={gdvector} />
-                <div className="black-overlay"></div>
-                <Card.Title className="services-page-card-title">
-                  Graphic Design
-                </Card.Title>
-              </Card>
-            </Col>
-          </div>
-          <div>
-            <Col className="services-page-card-container">
-              <Card className="locard services-page-card ">
-                <Card.Img className="locard-bg" variant="top" src={lovector} />
-                <div className="black-overlay"></div>
-                <Card.Title className="services-page-card-title">
-                  Layouting
-                </Card.Title>
-              </Card>
-            </Col>
-          </div>
-          <div>
-            <Col className="services-page-card-container">
-              <Card className="cpcard services-page-card ">
-                <Card.Img className="cpcard-bg" variant="top" src={cpvector} />
-                <div className="black-overlay"></div>
-                <Card.Title className="services-page-card-title">
-                  Customize Prints
-                </Card.Title>
-              </Card>
-            </Col>
-          </div>
-          <div>
-            <Col className="services-page-card-container">
-              <Card className="lfpcard services-page-card ">
-                <Card.Img
-                  className="lfpcard-bg"
-                  variant="top"
-                  src={lfpvector}
-                />
-                <div className="black-overlay"></div>
-                <Card.Title className="services-page-card-title">
-                  Large Format Printing
-                </Card.Title>
-              </Card>
-            </Col>
-          </div>
-          <div>
-            <Col className="services-page-card-container">
-              <Card className="dpcard services-page-card ">
-                <Card.Img className="dpcard-bg" variant="top" src={dpvector} />
-                <div className="black-overlay"></div>
-                <Card.Title className="services-page-card-title">
-                  Desktop Printing
-                </Card.Title>
-              </Card>
-            </Col>
-          </div>
-          <div>
-            <Col className="services-page-card-container">
-              <Card className="cpcard services-page-card ">
-                <Card.Img
-                  className="cpcard-bg"
-                  variant="top"
-                  src={offsetvector}
-                />
-                <div className="black-overlay"></div>
-                <Card.Title className="services-page-card-title">
-                  Offset Printing
-                </Card.Title>
-              </Card>
-            </Col>
-          </div>
-        </Slider>
-      </Container>
+      <section className="services-page-container">
+        <Container className="services-page">
+          <Row className="services-subtitle">
+            <p>
+              At PADES Printing, we know how important designs when it comes to
+              your branding, print and layout. So our printing team are always
+              on hand to get the job done. From the design for print to digital
+              design, our team will work hard to your deadlines, not ours.
+            </p>
+          </Row>
+          <Row className="bir-number-container">
+            <h3 className="bir-number text-center">
+              <strong>BIR ACCREDITATION NO. 028MP2019000000034</strong>
+            </h3>
+          </Row>
+          <Slider {...settings} className="services-slider">
+            <div>
+              <Col className="services-page-card-container">
+                <Card className="gdcard services-page-card ">
+                  <Card.Img
+                    className="gdcard-bg"
+                    variant="top"
+                    src={gdvector}
+                  />
+                  <div className="black-overlay"></div>
+                  <Card.Title className="services-page-card-title">
+                    Graphic Design
+                  </Card.Title>
+                </Card>
+              </Col>
+            </div>
+            <div>
+              <Col className="services-page-card-container">
+                <Card className="locard services-page-card ">
+                  <Card.Img
+                    className="locard-bg"
+                    variant="top"
+                    src={lovector}
+                  />
+                  <div className="black-overlay"></div>
+                  <Card.Title className="services-page-card-title">
+                    Layouting
+                  </Card.Title>
+                </Card>
+              </Col>
+            </div>
+            <div>
+              <Col className="services-page-card-container">
+                <Card className="cpcard services-page-card ">
+                  <Card.Img
+                    className="cpcard-bg"
+                    variant="top"
+                    src={cpvector}
+                  />
+                  <div className="black-overlay"></div>
+                  <Card.Title className="services-page-card-title">
+                    Customize Prints
+                  </Card.Title>
+                </Card>
+              </Col>
+            </div>
+            <div>
+              <Col className="services-page-card-container">
+                <Card className="lfpcard services-page-card ">
+                  <Card.Img
+                    className="lfpcard-bg"
+                    variant="top"
+                    src={lfpvector}
+                  />
+                  <div className="black-overlay"></div>
+                  <Card.Title className="services-page-card-title">
+                    Large Format Printing
+                  </Card.Title>
+                </Card>
+              </Col>
+            </div>
+            <div>
+              <Col className="services-page-card-container">
+                <Card className="dpcard services-page-card ">
+                  <Card.Img
+                    className="dpcard-bg"
+                    variant="top"
+                    src={dpvector}
+                  />
+                  <div className="black-overlay"></div>
+                  <Card.Title className="services-page-card-title">
+                    Desktop Printing
+                  </Card.Title>
+                </Card>
+              </Col>
+            </div>
+            <div>
+              <Col className="services-page-card-container">
+                <Card className="cpcard services-page-card ">
+                  <Card.Img
+                    className="cpcard-bg"
+                    variant="top"
+                    src={offsetvector}
+                  />
+                  <div className="black-overlay"></div>
+                  <Card.Title className="services-page-card-title">
+                    Offset Printing
+                  </Card.Title>
+                </Card>
+              </Col>
+            </div>
+          </Slider>
+        </Container>
+      </section>
     </>
   );
 };

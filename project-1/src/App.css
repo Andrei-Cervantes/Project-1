@@ -260,8 +260,6 @@
   padding-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  /* background-image: url(./components/pages/assets/BGTest/svg.png);
-  background-size: cover; */
   background-color: #f5f5f5;
 }
 
@@ -650,6 +648,10 @@ li {
 
 /* SERVICES PAGE STYLES */
 
+.services-page-container {
+  background-color: #d0fef5;
+}
+
 .services-page {
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -682,9 +684,9 @@ li {
   font-family: var(--normal-text);
   color: #121212;
   position: relative;
-  text-shadow: 1px 1px #f5f5f5;
   text-align: left;
   padding: 1rem 2rem;
+  font-weight: 500;
 }
 
 .bir-number {
@@ -753,6 +755,16 @@ li {
 
 /* PRODUCTS PAGE STYLING */
 
+.products-gradient-bg {
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(241, 252, 253, 1) 31%,
+    rgba(199, 238, 255, 1) 74%
+  );
+}
+
 .products-banner {
   background: url(./assets/bannerbg2.png) no-repeat center center;
   position: relative;
@@ -779,6 +791,10 @@ li {
   backdrop-filter: blur(10px);
   border: 0.5px solid rgb(245, 245, 245, 0.5);
   font-size: 40px;
+}
+
+.fp-section {
+  padding-bottom: 2rem;
 }
 
 .fp-section h3 {
@@ -856,6 +872,15 @@ li {
 
 .aproject-card:hover {
   transform: scale(1.05);
+}
+
+/* WHITE SPACE HANDLER */
+
+.about-heading,
+.first-section,
+.mission-vision,
+.second-section {
+  overflow-y: hidden;
 }
 
 /*  MOBILE RESPONSIVENESS */
@@ -1029,7 +1054,13 @@ li {
     font-size: 14px;
   }
 
-  #root > div > section.fp-section > div > div:nth-child(6) > div.col-8 {
+  #root
+    > div
+    > div.products-gradient-bg
+    > section.fp-section
+    > div
+    > div:nth-child(6)
+    > div.col-8 {
     padding: 0;
   }
 
