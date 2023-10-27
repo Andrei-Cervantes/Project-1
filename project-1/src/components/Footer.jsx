@@ -108,7 +108,7 @@ export function Footer() {
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink to="/contact" className="footer-nav-links nav-logo">
+                <NavLink to="mailto:jynoe.sabido22@gmail.com, andrei29.cervantes@gmail.com" className="footer-nav-links nav-logo">
                   Hire Developers
                 </NavLink>
               </Nav.Item>
