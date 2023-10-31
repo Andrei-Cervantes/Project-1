@@ -115,7 +115,7 @@ export const Contact = () => {
             <h3 className="text-center">COME VISIT US:</h3>
             <div className="column-container">
               <div className="locations-container" id="main">
-                <h4>Lot 19-B, Block 215, Dollar St. Phase 8, North Fairvew, Quezon City</h4>
+                <h4>19B, 215 Dollar St. P8, North Fairvew, Quezon City, Philippines</h4>
                 <Carousel
                   data-aos="fade-up"
                   data-aos-duration="2000"

@@ -163,6 +163,7 @@ export const Products = () => {
           </Row>
         </Container>
       </section>
+      <div className="products-gradient-bg">
       <section className="fp-section">
         <Container>
           <div>
@@ -498,6 +499,7 @@ export const Products = () => {
           </Row>
         </Container>
       </section>
+      </div>
     </>
   );
 };

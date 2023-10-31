@@ -33,7 +33,6 @@ export function OurClients() {
                     <ClientLogos clientName="Acay" />
                     <ClientLogos clientName="allenmc" />
                     <ClientLogos clientName="anSheng" />
-                    <ClientLogos clientName="bioQuick" />
                     <ClientLogos clientName="Catarman" />
                     <ClientLogos clientName="cocacola" />
                     <ClientLogos clientName="DivinaPastora" />
@@ -45,11 +44,23 @@ export function OurClients() {
                     <ClientLogos clientName="SerapEngg" />
                     <ClientLogos clientName="takeMeOut" />
                     <ClientLogos clientName="yoloSolution" />
+                    <ClientLogos clientName="cantoCrestitaBar" />
+                    <ClientLogos clientName="immaculateConception" />
+                    <ClientLogos clientName="kasanggayahanTrading" />
+                    <ClientLogos clientName="parkngo" />
+                    <ClientLogos clientName="pcTools" />
+                    <ClientLogos clientName="bioQuick" />
+                    <ClientLogos clientName="redCross" />
+                    <ClientLogos clientName="panjojoban" />
+                    <ClientLogos clientName="s2" />
+                    <ClientLogos clientName="coolMotors" />
+                    <ClientLogos clientName="samar" />
+                    <ClientLogos clientName="tataBubbleTea" />
                   </Row>
                 </div>
                 <div className="logos">
                   <Row className="logo-row">
-                    <ClientLogos clientName="DadasLechon" />
+                  <ClientLogos clientName="DadasLechon" />
                     <ClientLogos clientName="ElordeBoxingGym" />
                     <ClientLogos clientName="HealingGaling" />
                     <ClientLogos clientName="ZWMPH" />
@@ -68,7 +79,6 @@ export function OurClients() {
                     <ClientLogos clientName="Acay" />
                     <ClientLogos clientName="allenmc" />
                     <ClientLogos clientName="anSheng" />
-                    <ClientLogos clientName="bioQuick" />
                     <ClientLogos clientName="Catarman" />
                     <ClientLogos clientName="cocacola" />
                     <ClientLogos clientName="DivinaPastora" />
@@ -80,6 +90,18 @@ export function OurClients() {
                     <ClientLogos clientName="SerapEngg" />
                     <ClientLogos clientName="takeMeOut" />
                     <ClientLogos clientName="yoloSolution" />
+                    <ClientLogos clientName="cantoCrestitaBar" />
+                    <ClientLogos clientName="immaculateConception" />
+                    <ClientLogos clientName="kasanggayahanTrading" />
+                    <ClientLogos clientName="parkngo" />
+                    <ClientLogos clientName="pcTools" />
+                    <ClientLogos clientName="bioQuick" />
+                    <ClientLogos clientName="redCross" />
+                    <ClientLogos clientName="panjojoban" />
+                    <ClientLogos clientName="s2" />
+                    <ClientLogos clientName="coolMotors" />
+                    <ClientLogos clientName="samar" />
+                    <ClientLogos clientName="tataBubbleTea" />
                   </Row>
                 </div>
               </div>

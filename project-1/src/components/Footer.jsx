@@ -53,8 +53,8 @@ export function Footer() {
           <Col xs={6} className="footer-address">
             <h6>Office Address</h6>
             <p>
-              Lot 19-B, Block 215, Dollar St. Phase 8, North Fairview, Quezon
-              City
+              19B, 215 Dollar St. P8, North Fairview, Quezon
+              City, Philippines
             </p>
             <h6 className="hide-in-mobile">Production Address</h6>
             <p className="hide-in-mobile">
@@ -108,14 +108,9 @@ export function Footer() {
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <a href="" className="footer-nav-links nav-logo">
-                  Terms and Conditions
-                </a>
-              </Nav.Item>
-              <Nav.Item>
-                <a href="" className="footer-nav-links nav-logo">
-                  Privacy
-                </a>
+                <NavLink to="mailto:jynoe.sabido22@gmail.com, andrei29.cervantes@gmail.com" className="footer-nav-links nav-logo">
+                  Hire Developers
+                </NavLink>
               </Nav.Item>
             </Nav>
           </Col>
@@ -134,7 +129,8 @@ export function Footer() {
             Icons by <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
             </span>
           </Col>
-          <Col xs={6}></Col>
+          <Col xs={6}>
+          </Col>
         </Row>
       </Container>
     </div>
