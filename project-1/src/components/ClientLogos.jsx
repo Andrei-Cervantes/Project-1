@@ -33,6 +33,19 @@ import SerapEngg from "../assets/ClientLogos/SerapEngg.png";
 import takeMeOut from "../assets/ClientLogos/takeMeOut.png";
 import yoloSolution from "../assets/ClientLogos/yoloSolution.png";
 
+import cantoCrestitaBar from "../assets/ClientLogos/cantoCrestitaBar.png"
+import coolMotors from "../assets/ClientLogos/coolMotors.png"
+import immaculateConception from "../assets/ClientLogos/immaculateConception.png"
+import kasanggayahanTrading from "../assets/ClientLogos/kasanggayahanTrading.png"
+import panjojoban from "../assets/ClientLogos/panjojoban.png"
+import parkngo from "../assets/ClientLogos/parkngo.png"
+import pcTools from "../assets/ClientLogos/pcTools.png"
+import redCross from "../assets/ClientLogos/redCross.png"
+
+import s2 from "../assets/ClientLogos/s2.png"
+import samar from "../assets/ClientLogos/samar.png"
+import tataBubbleTea from "../assets/ClientLogos/tataBubbleTea.png"
+
 function clientLogoHandler(clientName) {
   switch (clientName) {
     case "DadasLechon":
@@ -256,6 +269,94 @@ function clientLogoHandler(clientName) {
           className="clients-logo"
           src={yoloSolution}
           alt="YOLO Solutions Logo"
+        />
+      );
+    case "cantoCrestitaBar":
+      return (
+        <img
+          className="clients-logo"
+          src={cantoCrestitaBar}
+          alt="Canto Crestita Bar Logo"
+        />
+      );
+    case "coolMotors":
+      return (
+        <img
+          className="clients-logo"
+          src={coolMotors}
+          alt="Cool Motors Logo"
+        />
+      );
+    case "immaculateConception":
+      return (
+        <img
+          className="clients-logo"
+          src={immaculateConception}
+          alt="Immaculate Conception Logo"
+        />
+      );
+    case "kasanggayahanTrading":
+      return (
+        <img
+          className="clients-logo"
+          src={kasanggayahanTrading}
+          alt="Kasanggayahan Trading Logo"
+        />
+      );
+    case "panjojoban":
+      return (
+        <img
+          className="clients-logo"
+          src={panjojoban}
+          alt="Panjojoban Leading Logo"
+        />
+      );
+    case "parkngo":
+      return (
+        <img
+          className="clients-logo"
+          src={parkngo}
+          alt="Park N Go Logo"
+        />
+      );
+    case "pcTools":
+      return (
+        <img
+          className="clients-logo"
+          src={pcTools}
+          alt="PC Tools Logo"
+        />
+      );
+    case "redCross":
+      return (
+        <img
+          className="clients-logo"
+          src={redCross}
+          alt="Red Cross Logo"
+        />
+      );
+    case "s2":
+      return (
+        <img
+          className="clients-logo"
+          src={s2}
+          alt="s2 Logo"
+        />
+      );
+    case "samar":
+      return (
+        <img
+          className="clients-logo"
+          src={samar}
+          alt="Samar Logo"
+        />
+      );
+    case "tataBubbleTea":
+      return (
+        <img
+          className="clients-logo"
+          src={tataBubbleTea}
+          alt="Tata Bubble Tea Logo"
         />
       );
 
